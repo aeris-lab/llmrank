@@ -1,0 +1,407 @@
+﻿{
+    "service_id":  "yahoo-finance__get-quotes_rapidapi",
+    "name":  "Yahoo Finance (RapidAPI) â€” get-quotes",
+    "docs_url":  "https://rapidapi.com/apidojo/api/yahoo-finance1/",
+    "api_base":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL"
+                      }
+                  ],
+    "keys_detected":  [
+                          "quoteResponse.result[0].symbol",
+                          "quoteResponse.result[0].regularMarketPrice",
+                          "quoteResponse.result[0].regularMarketVolume",
+                          "quoteResponse.result[0].regularMarketTime"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "RapidAPI key (X-RapidAPI-Key header)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-24T22:58:54Z",
+                              "docs_status":  "308",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://rapidapi.com/apidojo/api/yahoo-finance1/",
+                                                 "status":  "308",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  275,
+                                                 "error":  "The remote server returned an error: (308) Permanent Redirect."
+                                             },
+                              "docs_error":  "The remote server returned an error: (308) Permanent Redirect.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  29,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  383,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:13:38Z",
+                              "docs_status":  "308",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://rapidapi.com/apidojo/api/yahoo-finance1/",
+                                                 "status":  "308",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  354,
+                                                 "error":  "The remote server returned an error: (308) Permanent Redirect."
+                                             },
+                              "docs_error":  "The remote server returned an error: (308) Permanent Redirect.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  109,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  386,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:25:21Z",
+                              "docs_status":  "308",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://rapidapi.com/apidojo/api/yahoo-finance1/",
+                                                 "status":  "308",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  254,
+                                                 "error":  "The remote server returned an error: (308) Permanent Redirect."
+                                             },
+                              "docs_error":  "The remote server returned an error: (308) Permanent Redirect.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  27,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  362,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T19:40:33Z",
+                              "docs_status":  "308",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://rapidapi.com/apidojo/api/yahoo-finance1/",
+                                                 "status":  "308",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  338,
+                                                 "error":  "The remote server returned an error: (308) Permanent Redirect."
+                                             },
+                              "docs_error":  "The remote server returned an error: (308) Permanent Redirect.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  39,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  639,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:18:32Z",
+                              "docs_status":  "308",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://rapidapi.com/apidojo/api/yahoo-finance1/",
+                                                 "status":  "308",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  313,
+                                                 "error":  "The remote server returned an error: (308) Permanent Redirect."
+                                             },
+                              "docs_error":  "The remote server returned an error: (308) Permanent Redirect.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  41,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  341,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:01:30Z",
+                              "docs_status":  "308",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://rapidapi.com/apidojo/api/yahoo-finance1/",
+                                                 "status":  "308",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  312,
+                                                 "error":  "The remote server returned an error: (308) Permanent Redirect."
+                                             },
+                              "docs_error":  "The remote server returned an error: (308) Permanent Redirect.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  34,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-quotes?region=US\u0026symbols=SYMBOL",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  341,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "c"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\realtimestock_v1\\nonrag\\gpt\\c.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.6,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:22:19Z",
+                         "sdas":  0.345,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "429",
+    "best_probe_latency_ms":  27,
+    "best_probe_bytes":  true
+}

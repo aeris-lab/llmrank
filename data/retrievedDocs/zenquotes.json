@@ -1,0 +1,2025 @@
+﻿{
+    "service_id":  "zenquotes",
+    "name":  "ZenQuotes API",
+    "docs_url":  "https://zenquotes.io/",
+    "api_base":  "https://zenquotes.io/api",
+    "endpoints":  [
+                      {
+                          "requires_auth":  false,
+                          "method":  "GET",
+                          "path":  "/api/random"
+                      },
+                      {
+                          "requires_auth":  false,
+                          "method":  "GET",
+                          "path":  "/api/quotes"
+                      },
+                      {
+                          "requires_auth":  false,
+                          "method":  "GET",
+                          "path":  "/quotes"
+                      },
+                      {
+                          "requires_auth":  false,
+                          "method":  "GET",
+                          "path":  "/today"
+                      },
+                      {
+                          "requires_auth":  false,
+                          "method":  "GET",
+                          "path":  "/random"
+                      },
+                      {
+                          "requires_auth":  false,
+                          "method":  "GET",
+                          "path":  "/image"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/authors/[YOUR_KEY]"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/quotes/author/sun-tzu/[YOUR_KEY]"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/image/author/sun-tzu/[YOUR_KEY]"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/quotes/[YOUR_KEY]\u0026custom=true"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/quotes/[YOUR_KEY]\u0026keyword=[keyword]"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/image/[YOUR_KEY]\u0026keyword=[keyword]"
+                      }
+                  ],
+    "keys_detected":  [
+                          "q",
+                          "a",
+                          "h",
+                          "[0].q (quote)",
+                          "[0].a (author)"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API Key",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-26T21:14:31Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://zenquotes.io/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  35773,
+                                                 "duration_ms":  445,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/random",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  307,
+                                                                "duration_ms":  104,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/random",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/random",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/random",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  105,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/quotes",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  13373,
+                                                                "duration_ms":  113,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/quotes",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/quotes",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/quotes",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  104,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:16:17Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://zenquotes.io/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  35695,
+                                                 "duration_ms":  492,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/api/random",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  108,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/api/random",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/api/random",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/api/random",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  123,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/api/quotes",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  123,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/api/quotes",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/api/quotes",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/api/quotes",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  102,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/quotes",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  103,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/quotes",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/quotes",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/quotes",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  102,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/today",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  99,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/today",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/today",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/today",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  98,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/random",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  111,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/random",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/random",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/random",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  100,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/image",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  101,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/image",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/image",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/image",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  100,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/authors/[YOUR_KEY]",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  107,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/authors/[YOUR_KEY]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/authors/[YOUR_KEY]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/authors/[YOUR_KEY]",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  103,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  104,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  120,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/image/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  105,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/image/author/sun-tzu/[YOUR_KEY]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/image/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/image/author/sun-tzu/[YOUR_KEY]",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  102,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026custom=true",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  99,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026custom=true",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026custom=true",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  3,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026custom=true",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  99,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  105,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  95,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  100,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  98,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:54:50Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://zenquotes.io/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  35898,
+                                                 "duration_ms":  417,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/random",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  96,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/random",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/random",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/random",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  100,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/quotes",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  95,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/quotes",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/quotes",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/quotes",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  95,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/quotes",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  355,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/quotes",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/quotes",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/quotes",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  614,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/today",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  259,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/today",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/today",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/today",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  223,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/random",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  255,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/random",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/random",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/random",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  232,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/image",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  254,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/image",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/image",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/image",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  218,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/authors/[YOUR_KEY]",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html;charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  112117,
+                                                                "duration_ms":  400,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://zenquotes.io/authors/[YOUR_KEY]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/authors/[YOUR_KEY]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/authors/[YOUR_KEY]",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html;charset=UTF-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  104,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  326,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  219,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/image/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  264,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/image/author/sun-tzu/[YOUR_KEY]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/image/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/image/author/sun-tzu/[YOUR_KEY]",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  215,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026custom=true",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  250,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026custom=true",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026custom=true",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026custom=true",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  223,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  308,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  227,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  266,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  227,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:56:34Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://zenquotes.io/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  35892,
+                                                 "duration_ms":  543,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/random",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  167,
+                                                                "duration_ms":  108,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/random",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/random",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  8,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/random",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  118,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/quotes",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  13387,
+                                                                "duration_ms":  113,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/quotes",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/quotes",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/quotes",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  102,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/quotes",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  433,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/quotes",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/quotes",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/quotes",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  531,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/today",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  251,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/today",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/today",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/today",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  226,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/random",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  258,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/random",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/random",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/random",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  213,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/image",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  255,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/image",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/image",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/image",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  234,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/authors/[YOUR_KEY]",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html;charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  112117,
+                                                                "duration_ms":  299,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://zenquotes.io/authors/[YOUR_KEY]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/authors/[YOUR_KEY]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/authors/[YOUR_KEY]",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html;charset=UTF-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  112,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  325,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  217,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/image/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  262,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/image/author/sun-tzu/[YOUR_KEY]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/image/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/image/author/sun-tzu/[YOUR_KEY]",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  242,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026custom=true",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  268,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026custom=true",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026custom=true",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026custom=true",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  230,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  277,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  222,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  256,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://zenquotes.io/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  218,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:58:55Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://zenquotes.io/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  35900,
+                                                 "duration_ms":  424,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/api/random",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  123,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/api/random",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/api/random",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/api/random",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  113,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/api/quotes",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  96,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/api/quotes",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/api/quotes",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/api/quotes",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  143,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/quotes",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  95,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/quotes",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/quotes",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/quotes",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  90,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/today",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  105,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/today",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/today",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/today",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  107,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/random",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  124,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/random",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/random",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/random",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  116,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/image",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  99,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/image",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/image",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/image",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  104,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/authors/[YOUR_KEY]",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  104,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/authors/[YOUR_KEY]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/authors/[YOUR_KEY]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/authors/[YOUR_KEY]",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  104,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  94,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/quotes/author/sun-tzu/[YOUR_KEY]",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  98,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/image/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  102,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/image/author/sun-tzu/[YOUR_KEY]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/image/author/sun-tzu/[YOUR_KEY]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/image/author/sun-tzu/[YOUR_KEY]",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  95,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026custom=true",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  96,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026custom=true",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026custom=true",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026custom=true",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  101,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  113,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/quotes/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  95,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  94,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/image/[YOUR_KEY]\u0026keyword=[keyword]",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  99,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\quotes_v1\\nonrag\\gemini\\t.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\quotes_v1\\nonrag\\mistral\\t.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\quotes_v1\\nonrag\\gpt\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.8,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:59:39Z",
+                         "sdas":  0.435,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  false,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "200",
+    "best_probe_latency_ms":  104,
+    "best_probe_bytes":  true
+}

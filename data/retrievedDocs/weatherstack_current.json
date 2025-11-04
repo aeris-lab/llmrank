@@ -1,0 +1,108 @@
+﻿{
+    "service_id":  "weatherstack_current",
+    "name":  "Weatherstack â€” Current Weather",
+    "docs_url":  "https://weatherstack.com/documentation",
+    "api_base":  "https://api.weatherstack.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/current?access_key={API_key}\u0026query={city}\u0026units=m"
+                      }
+                  ],
+    "keys_detected":  [
+                          "current.temperature",
+                          "current.humidity",
+                          "current.wind_speed",
+                          "current.weather_descriptions[0]",
+                          "success (true) or error (status)"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "Access key via query (?access_key=YOUR_KEY)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-28T23:39:18Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://weatherstack.com/documentation",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  361879,
+                                                 "duration_ms":  692,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherstack.com/current?access_key={API_key}\u0026query={city}\u0026units=m",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  291,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.weatherstack.com/current?access_key={API_key}\u0026query={city}\u0026units=m",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherstack.com/current?access_key={API_key}\u0026query={city}\u0026units=m",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherstack.com/current?access_key={API_key}\u0026query={city}\u0026units=m",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  519,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\weather_v1\\nonrag\\gpt\\t.json"
+                ],
+    "best_probe_status":  "200",
+    "best_probe_latency_ms":  291,
+    "best_probe_bytes":  true,
+    "solar_scores":  {
+                         "ifs":  0.25,
+                         "support_verified":  false,
+                         "fca":  1,
+                         "error_handling_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:43:08Z",
+                         "sdas":  0.525,
+                         "pricing_verified":  true,
+                         "constraints_verified":  false,
+                         "code_samples_verified":  false,
+                         "ssi":  0,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true
+                     }
+}

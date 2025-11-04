@@ -1,0 +1,498 @@
+﻿{
+    "service_id":  "yelp__fusion_events",
+    "name":  "Yelp Fusion API (Events)",
+    "docs_url":  "https://docs.developer.yelp.com/reference/v3_event_search",
+    "api_base":  "https://api.yelp.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/v3/events"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}"
+                      }
+                  ],
+    "keys_detected":  [
+                          "events[].name",
+                          "events[].time_start",
+                          "events[].location.address1 / city",
+                          "events[].latitude / events[].longitude",
+                          "events[].description"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API Key (Authorization: Bearer YOUR_API_KEY header)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-26T20:09:39Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.developer.yelp.com/reference/v3_event_search",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  127,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.yelp.com/v3/events",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "140",
+                                                                "raw_bytes":  140,
+                                                                "duration_ms":  34,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.yelp.com/v3/events",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.yelp.com/v3/events",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.yelp.com/v3/events",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "182",
+                                                                 "raw_bytes":  182,
+                                                                 "duration_ms":  66,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:05:19Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.developer.yelp.com/reference/v3_events_search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  588618,
+                                                 "duration_ms":  759,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.yelp.com/v3/events",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "140",
+                                                                "raw_bytes":  140,
+                                                                "duration_ms":  38,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.yelp.com/v3/events",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.yelp.com/v3/events",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.yelp.com/v3/events",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "182",
+                                                                 "raw_bytes":  182,
+                                                                 "duration_ms":  167,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "140",
+                                                                "raw_bytes":  140,
+                                                                "duration_ms":  53,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "285",
+                                                                 "raw_bytes":  285,
+                                                                 "duration_ms":  37,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:06:44Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.developer.yelp.com/reference/v3_event_search",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  181,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.yelp.com/v3/events",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "140",
+                                                                "raw_bytes":  140,
+                                                                "duration_ms":  32,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.yelp.com/v3/events",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.yelp.com/v3/events",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.yelp.com/v3/events",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "182",
+                                                                 "raw_bytes":  182,
+                                                                 "duration_ms":  41,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "140",
+                                                                "raw_bytes":  140,
+                                                                "duration_ms":  55,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "285",
+                                                                 "raw_bytes":  285,
+                                                                 "duration_ms":  30,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:45:52Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.developer.yelp.com/reference/v3_events_search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  588659,
+                                                 "duration_ms":  647,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.yelp.com/v3/events",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "140",
+                                                                "raw_bytes":  140,
+                                                                "duration_ms":  40,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.yelp.com/v3/events",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.yelp.com/v3/events",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.yelp.com/v3/events",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "182",
+                                                                 "raw_bytes":  182,
+                                                                 "duration_ms":  154,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "140",
+                                                                "raw_bytes":  140,
+                                                                "duration_ms":  55,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "285",
+                                                                 "raw_bytes":  285,
+                                                                 "duration_ms":  37,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:47:12Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.developer.yelp.com/reference/v3_event_search",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  126,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.yelp.com/v3/events",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "140",
+                                                                "raw_bytes":  140,
+                                                                "duration_ms":  35,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.yelp.com/v3/events",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.yelp.com/v3/events",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.yelp.com/v3/events",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "182",
+                                                                 "raw_bytes":  182,
+                                                                 "duration_ms":  51,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "140",
+                                                                "raw_bytes":  140,
+                                                                "duration_ms":  35,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.yelp.com/v3/events?location={city}\u0026categories={cat}\u0026start_date={unix}\u0026end_date={unix}\u0026radius={meters}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "285",
+                                                                 "raw_bytes":  285,
+                                                                 "duration_ms":  36,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "c"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\events_v1\\nonrag\\gemini\\c.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\events_v1\\nonrag\\gpt\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.48,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T21:59:53Z",
+                         "sdas":  0.291,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  false,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "400",
+    "best_probe_latency_ms":  32,
+    "best_probe_bytes":  true
+}

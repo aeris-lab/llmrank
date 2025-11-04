@@ -1,0 +1,501 @@
+﻿{
+    "service_id":  "withings__health_data",
+    "name":  "Withings Health Data API",
+    "docs_url":  "https://developer.withings.com/api-reference/",
+    "api_base":  "https://wbsapi.withings.net",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/measure"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/activity"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/measure"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/v2/measure"
+                      }
+                  ],
+    "keys_detected":  [
+                          "measuregrps",
+                          "measures",
+                          "value",
+                          "type",
+                          "unit",
+                          "date",
+                          "status",
+                          "body.measuregrps[].measures[].value",
+                          "body.measuregrps[].measures[].type",
+                          "body.measuregrps[].date"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "OAuth 2.0 (Bearer token in Authorization header)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-26T20:41:44Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.withings.com/api-reference/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "11350",
+                                                 "raw_bytes":  11350,
+                                                 "duration_ms":  164,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://wbsapi.withings.net/measure",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "41",
+                                                                "raw_bytes":  41,
+                                                                "duration_ms":  162,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://wbsapi.withings.net/measure",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://wbsapi.withings.net/measure",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://wbsapi.withings.net/measure",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  181,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://wbsapi.withings.net/activity",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "41",
+                                                                "raw_bytes":  41,
+                                                                "duration_ms":  182,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://wbsapi.withings.net/activity",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://wbsapi.withings.net/activity",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://wbsapi.withings.net/activity",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  168,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:19:11Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.withings.com/api-reference/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "11350",
+                                                 "raw_bytes":  11350,
+                                                 "duration_ms":  181,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://wbsapi.withings.net/measure",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "41",
+                                                                "raw_bytes":  41,
+                                                                "duration_ms":  163,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://wbsapi.withings.net/measure",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://wbsapi.withings.net/measure",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://wbsapi.withings.net/measure",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  179,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://wbsapi.withings.net/activity",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "41",
+                                                                "raw_bytes":  41,
+                                                                "duration_ms":  162,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://wbsapi.withings.net/activity",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://wbsapi.withings.net/activity",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://wbsapi.withings.net/activity",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  178,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://wbsapi.withings.net/measure",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "41",
+                                                                "raw_bytes":  41,
+                                                                "duration_ms":  165,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://wbsapi.withings.net/measure",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://wbsapi.withings.net/measure",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://wbsapi.withings.net/measure",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  161,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://wbsapi.withings.net/v2/measure",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "41",
+                                                                "raw_bytes":  41,
+                                                                "duration_ms":  156,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://wbsapi.withings.net/v2/measure",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://wbsapi.withings.net/v2/measure",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://wbsapi.withings.net/v2/measure",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  160,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:21:44Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.withings.com/api-reference/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "11350",
+                                                 "raw_bytes":  11350,
+                                                 "duration_ms":  174,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://wbsapi.withings.net/measure",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "41",
+                                                                "raw_bytes":  41,
+                                                                "duration_ms":  158,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://wbsapi.withings.net/measure",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://wbsapi.withings.net/measure",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://wbsapi.withings.net/measure",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  210,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://wbsapi.withings.net/activity",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "41",
+                                                                "raw_bytes":  41,
+                                                                "duration_ms":  178,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://wbsapi.withings.net/activity",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://wbsapi.withings.net/activity",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://wbsapi.withings.net/activity",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  165,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://wbsapi.withings.net/measure",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "41",
+                                                                "raw_bytes":  41,
+                                                                "duration_ms":  162,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://wbsapi.withings.net/measure",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://wbsapi.withings.net/measure",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://wbsapi.withings.net/measure",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  160,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://wbsapi.withings.net/v2/measure",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "41",
+                                                                "raw_bytes":  41,
+                                                                "duration_ms":  170,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://wbsapi.withings.net/v2/measure",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://wbsapi.withings.net/v2/measure",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://wbsapi.withings.net/v2/measure",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  164,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\health_v1\\nonrag\\mistral\\c.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\health_v1\\nonrag\\claude\\c.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  1,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:22:16Z",
+                         "sdas":  0.525,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "200",
+    "best_probe_latency_ms":  156,
+    "best_probe_bytes":  true
+}

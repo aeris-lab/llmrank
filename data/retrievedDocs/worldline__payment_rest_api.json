@@ -1,0 +1,528 @@
+﻿{
+    "service_id":  "worldline__payment_rest_api",
+    "name":  "Worldline Payment REST API",
+    "docs_url":  "https://developer.payments.worldline.com/techguides/payment-rest-api/payment-rest-api-server.html",
+    "api_base":  "https://api.preprod.connector.worldline-solutions.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/api/v2/merchants/{mid}/orders/{orderId}"
+                      }
+                  ],
+    "keys_detected":  [
+                          "transactionReferences",
+                          "transactionId",
+                          "status",
+                          "amount",
+                          "currency"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API Key (Bearer token)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-21T23:00:02Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.payments.worldline.com/techguides/payment-rest-api/payment-rest-api-server.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "341445",
+                                                 "raw_bytes":  341445,
+                                                 "duration_ms":  600,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                            },
+                                                    "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  37,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T22:56:27Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.payments.worldline.com/techguides/payment-rest-api/payment-rest-api-server.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "341445",
+                                                 "raw_bytes":  341445,
+                                                 "duration_ms":  713,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                            },
+                                                    "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  140,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:10:44Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.payments.worldline.com/techguides/payment-rest-api/payment-rest-api-server.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "341445",
+                                                 "raw_bytes":  341445,
+                                                 "duration_ms":  716,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                            },
+                                                    "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  62,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:22:58Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.payments.worldline.com/techguides/payment-rest-api/payment-rest-api-server.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "341445",
+                                                 "raw_bytes":  341445,
+                                                 "duration_ms":  663,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                            },
+                                                    "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  27,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T19:12:42Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.payments.worldline.com/techguides/payment-rest-api/payment-rest-api-server.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "341445",
+                                                 "raw_bytes":  341445,
+                                                 "duration_ms":  593,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                            },
+                                                    "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  93,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T19:38:05Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.payments.worldline.com/techguides/payment-rest-api/payment-rest-api-server.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "341445",
+                                                 "raw_bytes":  341445,
+                                                 "duration_ms":  467,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                            },
+                                                    "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  30,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:11:36Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.payments.worldline.com/techguides/payment-rest-api/payment-rest-api-server.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "341445",
+                                                 "raw_bytes":  341445,
+                                                 "duration_ms":  664,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  6,
+                                                                "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                            },
+                                                    "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  30,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:53:10Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.payments.worldline.com/techguides/payment-rest-api/payment-rest-api-server.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "341445",
+                                                 "raw_bytes":  341445,
+                                                 "duration_ms":  595,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  2,
+                                                                "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                            },
+                                                    "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.preprod.connector.worldline-solutions.com/api/v2/merchants/{mid}/orders/{orderId}",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  32,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.preprod.connector.worldline-solutions.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\payments_v1\\nonrag\\mistral\\c.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:54:01Z",
+                         "sdas":  0.075,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "ERR",
+    "best_probe_latency_ms":  0,
+    "best_probe_bytes":  false
+}

@@ -1,0 +1,416 @@
+﻿{
+    "service_id":  "weatherapi__current_weather",
+    "name":  "WeatherAPI.com Current Weather API",
+    "docs_url":  "https://www.weatherapi.com/",
+    "api_base":  "https://api.weatherapi.com/v1",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/current.json?key={api_key}\u0026q={city_name}"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/current.json?key={api_key}\u0026q={lat},{lon}"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/current.json?key={api_key}\u0026q={location}"
+                      }
+                  ],
+    "keys_detected":  [
+                          "location",
+                          "current"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API key in query parameter",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-26T22:09:20Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.weatherapi.com/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "293232",
+                                                 "raw_bytes":  293232,
+                                                 "duration_ms":  885,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={city_name}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  205,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={city_name}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={city_name}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={city_name}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  411,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={lat},{lon}",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  204,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={lat},{lon}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={lat},{lon}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={lat},{lon}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  204,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:42:11Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.weatherapi.com/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "293232",
+                                                 "raw_bytes":  293232,
+                                                 "duration_ms":  497,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={city_name}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  205,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={city_name}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={city_name}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={city_name}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  183,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={lat},{lon}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  320,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={lat},{lon}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={lat},{lon}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={lat},{lon}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  262,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={location}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  468,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={location}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={location}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={location}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  198,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:42:48Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.weatherapi.com/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "293232",
+                                                 "raw_bytes":  293232,
+                                                 "duration_ms":  752,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={city_name}",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  267,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={city_name}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={city_name}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={city_name}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  181,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={lat},{lon}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  202,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={lat},{lon}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={lat},{lon}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={lat},{lon}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  439,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={location}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  299,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={location}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={location}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherapi.com/v1/current.json?key={api_key}\u0026q={location}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  203,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\weather_v1\\nonrag\\mistral\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\weather_v1\\nonrag\\mistral\\c.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.64,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:43:08Z",
+                         "sdas":  0.363,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  false,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "401",
+    "best_probe_latency_ms":  202,
+    "best_probe_bytes":  true
+}

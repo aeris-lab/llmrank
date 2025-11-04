@@ -1,0 +1,146 @@
+﻿{
+    "service_id":  "zenquotes__random_search",
+    "name":  "ZenQuotes.io â€” Random \u0026 Search",
+    "docs_url":  "https://zenquotes.io/",
+    "api_base":  "https://zenquotes.io/api",
+    "endpoints":  [
+                      {
+                          "requires_auth":  false,
+                          "method":  "GET",
+                          "path":  "/random"
+                      },
+                      {
+                          "requires_auth":  false,
+                          "method":  "GET",
+                          "path":  "/quotes"
+                      }
+                  ],
+    "keys_detected":  [
+                          "[0].q",
+                          "[0].a"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "None for basic endpoints",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-28T22:55:02Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://zenquotes.io/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  35888,
+                                                 "duration_ms":  879,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/random",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  105,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/random",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/random",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/random",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  115,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://zenquotes.io/api/quotes",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  139,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://zenquotes.io/api/quotes",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://zenquotes.io/api/quotes",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://zenquotes.io/api/quotes",
+                                                                 "status":  "429",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  128,
+                                                                 "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\quotes_v1\\nonrag\\gpt\\v.json"
+                ],
+    "best_probe_status":  "429",
+    "best_probe_latency_ms":  105,
+    "best_probe_bytes":  true,
+    "solar_scores":  {
+                         "ifs":  0.25,
+                         "support_verified":  false,
+                         "fca":  0.48,
+                         "error_handling_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:59:39Z",
+                         "sdas":  0.291,
+                         "pricing_verified":  true,
+                         "constraints_verified":  false,
+                         "code_samples_verified":  false,
+                         "ssi":  0,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  false
+                     }
+}

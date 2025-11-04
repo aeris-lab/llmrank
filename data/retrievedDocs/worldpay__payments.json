@@ -1,0 +1,1652 @@
+﻿{
+    "service_id":  "worldpay__payments",
+    "name":  "Worldpay Payments API",
+    "docs_url":  "https://developer.worldpay.com/docs/wpg/directintegration/apireference/payments",
+    "api_base":  "https://api.worldpay.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/payments"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/v1/orders"
+                      }
+                  ],
+    "keys_detected":  [
+                          "orderCode",
+                          "paymentStatus",
+                          "amount",
+                          "currencyCode",
+                          "outcome",
+                          "transactionId",
+                          "transactionStatus"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "Service key with merchant ID in header",
+    "free_tier":  false,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-21T18:21:23Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.fisglobal.com/api-reference/payments",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "101846",
+                                                 "raw_bytes":  101846,
+                                                 "duration_ms":  1270,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                "content_length_header":  "926",
+                                                                "raw_bytes":  926,
+                                                                "duration_ms":  343,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/payments",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                 "content_length_header":  "926",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  413,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T22:57:24Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apireference/payments",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1188,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/payments",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  106,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T22:58:28Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.fisglobal.com/api-reference/payments",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "101847",
+                                                 "raw_bytes":  101847,
+                                                 "duration_ms":  756,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                "content_length_header":  "926",
+                                                                "raw_bytes":  926,
+                                                                "duration_ms":  262,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/payments",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                 "content_length_header":  "926",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  378,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "86",
+                                                                "raw_bytes":  86,
+                                                                "duration_ms":  222,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "86",
+                                                                 "raw_bytes":  86,
+                                                                 "duration_ms":  200,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T22:54:11Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.fisglobal.com/api-reference/payments",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "101847",
+                                                 "raw_bytes":  101847,
+                                                 "duration_ms":  1419,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                "content_length_header":  "926",
+                                                                "raw_bytes":  926,
+                                                                "duration_ms":  183,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/payments",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                 "content_length_header":  "926",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  752,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "86",
+                                                                "raw_bytes":  86,
+                                                                "duration_ms":  255,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "86",
+                                                                 "raw_bytes":  86,
+                                                                 "duration_ms":  178,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T22:56:01Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apireference/payments",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1132,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/payments",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  128,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:09:10Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.fisglobal.com/api-reference/payments",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "101848",
+                                                 "raw_bytes":  101848,
+                                                 "duration_ms":  1513,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                "content_length_header":  "926",
+                                                                "raw_bytes":  926,
+                                                                "duration_ms":  303,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/payments",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                 "content_length_header":  "926",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  320,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "86",
+                                                                "raw_bytes":  86,
+                                                                "duration_ms":  328,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "86",
+                                                                 "raw_bytes":  86,
+                                                                 "duration_ms":  181,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:10:24Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apireference/payments",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1578,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/payments",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  58,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:21:19Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.fisglobal.com/api-reference/payments",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "101848",
+                                                 "raw_bytes":  101848,
+                                                 "duration_ms":  1719,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                "content_length_header":  "926",
+                                                                "raw_bytes":  926,
+                                                                "duration_ms":  308,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/payments",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                 "content_length_header":  "926",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  536,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "86",
+                                                                "raw_bytes":  86,
+                                                                "duration_ms":  369,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "86",
+                                                                 "raw_bytes":  86,
+                                                                 "duration_ms":  241,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:22:38Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apireference/payments",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1102,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/payments",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  116,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T19:11:05Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.fisglobal.com/api-reference/payments",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "101848",
+                                                 "raw_bytes":  101848,
+                                                 "duration_ms":  630,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                "content_length_header":  "926",
+                                                                "raw_bytes":  926,
+                                                                "duration_ms":  212,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/payments",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                 "content_length_header":  "926",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  302,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "86",
+                                                                "raw_bytes":  86,
+                                                                "duration_ms":  310,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "86",
+                                                                 "raw_bytes":  86,
+                                                                 "duration_ms":  207,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T19:12:20Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apireference/payments",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1152,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/payments",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  104,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T19:36:19Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.fisglobal.com/api-reference/payments",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "101848",
+                                                 "raw_bytes":  101848,
+                                                 "duration_ms":  1149,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                "content_length_header":  "926",
+                                                                "raw_bytes":  926,
+                                                                "duration_ms":  224,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/payments",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                 "content_length_header":  "926",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  272,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "86",
+                                                                "raw_bytes":  86,
+                                                                "duration_ms":  220,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "86",
+                                                                 "raw_bytes":  86,
+                                                                 "duration_ms":  196,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T19:37:44Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apireference/payments",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1128,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/payments",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  114,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:09:59Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.fisglobal.com/api-reference/payments",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "101847",
+                                                 "raw_bytes":  101847,
+                                                 "duration_ms":  581,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                "content_length_header":  "926",
+                                                                "raw_bytes":  926,
+                                                                "duration_ms":  270,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/payments",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                 "content_length_header":  "926",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  381,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "86",
+                                                                "raw_bytes":  86,
+                                                                "duration_ms":  243,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "86",
+                                                                 "raw_bytes":  86,
+                                                                 "duration_ms":  214,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:11:17Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apireference/payments",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1129,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  6,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/payments",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  144,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  5,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  5,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:51:35Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.fisglobal.com/api-reference/payments",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "101847",
+                                                 "raw_bytes":  101847,
+                                                 "duration_ms":  688,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                "content_length_header":  "926",
+                                                                "raw_bytes":  926,
+                                                                "duration_ms":  188,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/payments",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/vnd.worldpay.payments-v6+json",
+                                                                 "content_length_header":  "926",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  230,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "86",
+                                                                "raw_bytes":  86,
+                                                                "duration_ms":  178,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://try.access.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://try.access.worldpay.com/v1/orders",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "86",
+                                                                 "raw_bytes":  86,
+                                                                 "duration_ms":  188,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:52:51Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apireference/payments",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1132,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  2,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/payments",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  29,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  2,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  2,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\payments_v1\\nonrag\\gemini\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\payments_v1\\nonrag\\deepseek\\v.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  1,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:54:02Z",
+                         "sdas":  0.525,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "200",
+    "best_probe_latency_ms":  183,
+    "best_probe_bytes":  true
+}

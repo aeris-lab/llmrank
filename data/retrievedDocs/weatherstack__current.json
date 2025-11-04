@@ -1,0 +1,1590 @@
+﻿{
+    "service_id":  "weatherstack__current",
+    "name":  "Weatherstack Current Weather API",
+    "docs_url":  "https://weatherstack.com",
+    "api_base":  "http://api.weatherstack.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/current"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/current?access_key={api_key}\u0026query={location}"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/current?access_key={api_key}\u0026query={city_name}"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/current?access_key={api_key}\u0026query={lat},{lon}"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m"
+                      }
+                  ],
+    "keys_detected":  [
+                          "location",
+                          "current",
+                          "temperature",
+                          "humidity",
+                          "wind_speed",
+                          "weather_descriptions",
+                          "success",
+                          "current.temperature",
+                          "current.humidity",
+                          "current.wind_speed",
+                          "current.weather_descriptions[0]"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API key in query parameter",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-26T22:08:41Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://weatherstack.com/documentation",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  361879,
+                                                 "duration_ms":  425,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherstack.com/current",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  193,
+                                                                "duration_ms":  292,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.weatherstack.com/current",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherstack.com/current",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherstack.com/current",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  208,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T22:08:56Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://weatherstack.com",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  243952,
+                                                 "duration_ms":  408,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  193,
+                                                                "duration_ms":  124,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  137,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  110,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  173,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T22:09:11Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://weatherstack.com",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  243952,
+                                                 "duration_ms":  414,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  193,
+                                                                "duration_ms":  106,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  180,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  110,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  190,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  118,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  182,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  117,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  205,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T22:09:24Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://weatherstack.com",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  243952,
+                                                 "duration_ms":  443,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  193,
+                                                                "duration_ms":  119,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  183,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  133,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  183,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  134,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  234,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  103,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  186,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:39:36Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://weatherstack.com/documentation",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  361879,
+                                                 "duration_ms":  512,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherstack.com/current",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  193,
+                                                                "duration_ms":  146,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.weatherstack.com/current",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherstack.com/current",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherstack.com/current",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  161,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  274,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  174,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  297,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  170,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  297,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  258,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  176,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  237,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:41:57Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://weatherstack.com/documentation",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  361879,
+                                                 "duration_ms":  388,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherstack.com/current",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  193,
+                                                                "duration_ms":  270,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.weatherstack.com/current",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherstack.com/current",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherstack.com/current",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  185,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  160,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  210,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  177,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  265,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  270,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  234,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  185,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  162,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:42:16Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://weatherstack.com",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  243952,
+                                                 "duration_ms":  422,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  193,
+                                                                "duration_ms":  181,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  224,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  119,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  227,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  156,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  235,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  135,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  241,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  140,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  249,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:42:35Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://weatherstack.com",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  243952,
+                                                 "duration_ms":  391,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  193,
+                                                                "duration_ms":  135,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  238,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  122,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  252,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  120,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  205,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  133,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  252,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  140,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  230,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:42:53Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://weatherstack.com",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  243952,
+                                                 "duration_ms":  403,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  193,
+                                                                "duration_ms":  111,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  199,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  120,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={location}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  215,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  132,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={city_name}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  227,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  143,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key={api_key}\u0026query={lat},{lon}",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  234,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "http://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; Charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  194,
+                                                                "duration_ms":  148,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "http://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "http://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "http://api.weatherstack.com/current?access_key=YOUR_KEY\u0026query={query}\u0026units=m",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  261,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\weather_v1\\nonrag\\deepseek\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\weather_v1\\nonrag\\mistral\\c.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\weather_v1\\nonrag\\mistral\\t.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\weather_v1\\nonrag\\mistral\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\weather_v1\\nonrag\\gpt\\v.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  1,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:43:08Z",
+                         "sdas":  0.525,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "200",
+    "best_probe_latency_ms":  103,
+    "best_probe_bytes":  true
+}

@@ -1,0 +1,1910 @@
+﻿{
+    "service_id":  "vonage__sms_api",
+    "name":  "Vonage SMS API (formerly Nexmo)",
+    "docs_url":  "https://developer.vonage.com/en/messaging/sms/overview",
+    "api_base":  "https://rest.nexmo.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/sms/json"
+                      }
+                  ],
+    "keys_detected":  [
+                          "messages[].status",
+                          "messages[].message-id",
+                          "messages[].to",
+                          "messages[].message-price",
+                          "messages[].error-text",
+                          "messages[].remaining-balance"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API key and secret via form parameters or query string",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-23T04:46:34Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  44058,
+                                                 "duration_ms":  288,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  36,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  46,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T17:45:50Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/code-snippets/send-an-sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  44053,
+                                                 "duration_ms":  814,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  35,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  174,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T17:46:19Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  44036,
+                                                 "duration_ms":  412,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  49,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  74,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T17:57:58Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/code-snippets/send-an-sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  44053,
+                                                 "duration_ms":  748,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  41,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  189,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T17:58:23Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  44036,
+                                                 "duration_ms":  316,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  49,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  36,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:21:28Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/code-snippets/send-an-sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  44053,
+                                                 "duration_ms":  767,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  47,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  180,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:21:55Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  44036,
+                                                 "duration_ms":  310,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  52,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  33,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:23:21Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/code-snippets/send-an-sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  44053,
+                                                 "duration_ms":  711,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  63,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  343,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:23:45Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  44036,
+                                                 "duration_ms":  259,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  30,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  36,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:29:59Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/code-snippets/send-an-sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  44053,
+                                                 "duration_ms":  898,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  39,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  191,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:30:26Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  44036,
+                                                 "duration_ms":  271,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  54,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  41,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:36:48Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/code-snippets/send-an-sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  44053,
+                                                 "duration_ms":  771,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  63,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  256,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:37:13Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  44036,
+                                                 "duration_ms":  257,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  34,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  54,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:12:52Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/code-snippets/send-an-sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43986,
+                                                 "duration_ms":  785,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  39,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  229,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:13:23Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43969,
+                                                 "duration_ms":  374,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  57,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  35,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:25:12Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/code-snippets/send-an-sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43986,
+                                                 "duration_ms":  785,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  37,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  262,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:25:36Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43969,
+                                                 "duration_ms":  283,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  44,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  33,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:31:13Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/code-snippets/send-an-sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43986,
+                                                 "duration_ms":  788,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  35,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  187,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:31:38Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43969,
+                                                 "duration_ms":  272,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  33,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  31,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:41:27Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/code-snippets/send-an-sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43986,
+                                                 "duration_ms":  803,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  54,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  230,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:41:52Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43969,
+                                                 "duration_ms":  321,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  36,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  36,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T23:24:42Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/code-snippets/send-an-sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43986,
+                                                 "duration_ms":  372,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  38,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  33,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T23:25:13Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43969,
+                                                 "duration_ms":  495,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  27,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  29,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:39:59Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/code-snippets/send-an-sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43986,
+                                                 "duration_ms":  330,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  67,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  52,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:40:25Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43969,
+                                                 "duration_ms":  321,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  45,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  57,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:51:01Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/code-snippets/send-an-sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43986,
+                                                 "duration_ms":  278,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  37,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  34,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:51:25Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43969,
+                                                 "duration_ms":  262,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  28,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  36,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:44:02Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/code-snippets/send-an-sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43986,
+                                                 "duration_ms":  273,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  37,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  41,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:44:27Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  43969,
+                                                 "duration_ms":  279,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  35,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  40,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:28:56Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/code-snippets/send-an-sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  44084,
+                                                 "duration_ms":  278,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  38,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  39,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:29:23Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.vonage.com/en/messaging/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  44067,
+                                                 "duration_ms":  317,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "80",
+                                                                "raw_bytes":  80,
+                                                                "duration_ms":  65,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://rest.nexmo.com/sms/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://rest.nexmo.com/sms/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://rest.nexmo.com/sms/json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "80",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  45,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\sms_v1\\nonrag\\claude\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\sms_v1\\nonrag\\claude\\c.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  1,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:32:23Z",
+                         "sdas":  0.525,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "200",
+    "best_probe_latency_ms":  27,
+    "best_probe_bytes":  true
+}

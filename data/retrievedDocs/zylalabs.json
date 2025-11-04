@@ -1,0 +1,105 @@
+﻿{
+    "service_id":  "zylalabs",
+    "name":  "Famous Quotes API",
+    "docs_url":  "https://zylalabs.com/api-marketplace/tools/famous+quotes+api/2128",
+    "api_base":  "https://famous-quotes-api.p.rapidapi.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/quotes"
+                      }
+                  ],
+    "keys_detected":  [
+                          "quote",
+                          "author"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API Key",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-28T22:58:57Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://zylalabs.com/api-marketplace/tools/famous+quotes+api/2128",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  347853,
+                                                 "duration_ms":  382,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://famous-quotes-api.p.rapidapi.com/quotes",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  34,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://famous-quotes-api.p.rapidapi.com/quotes",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://famous-quotes-api.p.rapidapi.com/quotes",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://famous-quotes-api.p.rapidapi.com/quotes",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  386,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\quotes_v1\\nonrag\\mistral\\t.json"
+                ],
+    "best_probe_status":  "429",
+    "best_probe_latency_ms":  34,
+    "best_probe_bytes":  true,
+    "solar_scores":  {
+                         "ifs":  0.25,
+                         "support_verified":  false,
+                         "fca":  0.48,
+                         "error_handling_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:59:39Z",
+                         "sdas":  0.291,
+                         "pricing_verified":  true,
+                         "constraints_verified":  false,
+                         "code_samples_verified":  false,
+                         "ssi":  0,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  false
+                     }
+}

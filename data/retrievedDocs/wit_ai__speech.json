@@ -1,0 +1,710 @@
+﻿{
+    "service_id":  "wit_ai__speech",
+    "name":  "Wit.ai Speech API",
+    "docs_url":  "https://wit.ai/docs/http#post_speech_link",
+    "api_base":  "https://api.wit.ai",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/speech"
+                      }
+                  ],
+    "keys_detected":  [
+                          "text",
+                          "intents",
+                          "entities",
+                          "traits",
+                          "intents[].confidence",
+                          "intents[].name"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "Server Access Token (Bearer Token)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-22T02:17:49Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=\"utf-8\"",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://wit.ai/docs/http#post_speech_link",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=\"utf-8\"",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  87740,
+                                                 "duration_ms":  1533,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "58",
+                                                                "raw_bytes":  58,
+                                                                "duration_ms":  116,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.wit.ai/speech",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.wit.ai/speech",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "58",
+                                                                 "raw_bytes":  58,
+                                                                 "duration_ms":  134,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T23:29:19Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=\"utf-8\"",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://wit.ai/docs/http/20240304/#post__speech_link",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=\"utf-8\"",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  90883,
+                                                 "duration_ms":  556,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "58",
+                                                                "raw_bytes":  58,
+                                                                "duration_ms":  42,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.wit.ai/speech",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.wit.ai/speech",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "58",
+                                                                 "raw_bytes":  58,
+                                                                 "duration_ms":  194,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T23:30:22Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=\"utf-8\"",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://wit.ai/docs/http#post_speech_link",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=\"utf-8\"",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  90883,
+                                                 "duration_ms":  423,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "58",
+                                                                "raw_bytes":  58,
+                                                                "duration_ms":  33,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.wit.ai/speech",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.wit.ai/speech",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "58",
+                                                                 "raw_bytes":  58,
+                                                                 "duration_ms":  44,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:44:32Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=\"utf-8\"",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://wit.ai/docs/http/20240304/#post__speech_link",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=\"utf-8\"",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  86768,
+                                                 "duration_ms":  622,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "58",
+                                                                "raw_bytes":  58,
+                                                                "duration_ms":  82,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.wit.ai/speech",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.wit.ai/speech",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "58",
+                                                                 "raw_bytes":  58,
+                                                                 "duration_ms":  337,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:45:31Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=\"utf-8\"",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://wit.ai/docs/http#post_speech_link",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=\"utf-8\"",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  86769,
+                                                 "duration_ms":  399,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "58",
+                                                                "raw_bytes":  58,
+                                                                "duration_ms":  77,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.wit.ai/speech",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.wit.ai/speech",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "58",
+                                                                 "raw_bytes":  58,
+                                                                 "duration_ms":  41,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:55:21Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=\"utf-8\"",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://wit.ai/docs/http/20240304/#post__speech_link",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=\"utf-8\"",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  86769,
+                                                 "duration_ms":  572,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "58",
+                                                                "raw_bytes":  58,
+                                                                "duration_ms":  90,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.wit.ai/speech",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.wit.ai/speech",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "58",
+                                                                 "raw_bytes":  58,
+                                                                 "duration_ms":  404,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:56:23Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=\"utf-8\"",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://wit.ai/docs/http#post_speech_link",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=\"utf-8\"",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  86768,
+                                                 "duration_ms":  463,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "58",
+                                                                "raw_bytes":  58,
+                                                                "duration_ms":  136,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.wit.ai/speech",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.wit.ai/speech",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "58",
+                                                                 "raw_bytes":  58,
+                                                                 "duration_ms":  41,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:48:59Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=\"utf-8\"",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://wit.ai/docs/http/20240304/#post__speech_link",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=\"utf-8\"",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  87762,
+                                                 "duration_ms":  374,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "58",
+                                                                "raw_bytes":  58,
+                                                                "duration_ms":  121,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.wit.ai/speech",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.wit.ai/speech",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "58",
+                                                                 "raw_bytes":  58,
+                                                                 "duration_ms":  282,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:49:57Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=\"utf-8\"",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://wit.ai/docs/http#post_speech_link",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=\"utf-8\"",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  87762,
+                                                 "duration_ms":  338,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "58",
+                                                                "raw_bytes":  58,
+                                                                "duration_ms":  83,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.wit.ai/speech",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.wit.ai/speech",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "58",
+                                                                 "raw_bytes":  58,
+                                                                 "duration_ms":  179,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:34:55Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=\"utf-8\"",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://wit.ai/docs/http/20240304/#post__speech_link",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=\"utf-8\"",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  86754,
+                                                 "duration_ms":  945,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "58",
+                                                                "raw_bytes":  58,
+                                                                "duration_ms":  74,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.wit.ai/speech",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.wit.ai/speech",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "58",
+                                                                 "raw_bytes":  58,
+                                                                 "duration_ms":  381,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:36:15Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=\"utf-8\"",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://wit.ai/docs/http#post_speech_link",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=\"utf-8\"",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  86754,
+                                                 "duration_ms":  504,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "58",
+                                                                "raw_bytes":  58,
+                                                                "duration_ms":  56,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://api.wit.ai/speech",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.wit.ai/speech",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.wit.ai/speech",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "58",
+                                                                 "raw_bytes":  58,
+                                                                 "duration_ms":  146,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\speechtext_v1\\nonrag\\gemini\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\speechtext_v1\\nonrag\\claude\\c.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.6,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:38:04Z",
+                         "sdas":  0.345,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "400",
+    "best_probe_latency_ms":  33,
+    "best_probe_bytes":  true
+}

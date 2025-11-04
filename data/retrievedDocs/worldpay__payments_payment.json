@@ -1,0 +1,526 @@
+﻿{
+    "service_id":  "worldpay__payments_payment",
+    "name":  "Worldpay Payments API",
+    "docs_url":  "https://developer.worldpay.com/docs/wpg/directintegration/apitransaction",
+    "api_base":  "https://api.worldpay.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/v1/orders"
+                      }
+                  ],
+    "keys_detected":  [
+                          "orderCode",
+                          "paymentStatus",
+                          "amount"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "Service key in Authorization header",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-21T22:56:32Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apitransaction",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1414,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  102,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T22:54:51Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apitransaction",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1541,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  126,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:09:34Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apitransaction",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  909,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  100,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:21:44Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apitransaction",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1019,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  75,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T19:11:29Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apitransaction",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  924,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  4,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  138,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T19:36:48Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apitransaction",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  999,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  2,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  79,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:10:25Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apitransaction",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1094,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  6,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  78,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:52:00Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.worldpay.com/docs/wpg/directintegration/apitransaction",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  730,
+                                                 "error":  "The request was aborted: The connection was closed unexpectedly."
+                                             },
+                              "docs_error":  "The request was aborted: The connection was closed unexpectedly.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  2,
+                                                                "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                            },
+                                                    "url":  "https://api.worldpay.com/v1/orders",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.worldpay.com/v1/orders",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.worldpay.com/v1/orders",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  136,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.worldpay.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "c"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\payments_v1\\nonrag\\deepseek\\c.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:54:02Z",
+                         "sdas":  0.075,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "ERR",
+    "best_probe_latency_ms":  0,
+    "best_probe_bytes":  false
+}

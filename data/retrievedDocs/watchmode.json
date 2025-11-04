@@ -1,0 +1,759 @@
+﻿{
+    "service_id":  "watchmode",
+    "name":  "Watchmode Movie \u0026 TV API",
+    "docs_url":  "https://api.watchmode.com/docs/",
+    "api_base":  "https://api.watchmode.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/v1/search/"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/v1/title/{id}/details/"
+                      }
+                  ],
+    "keys_detected":  [
+                          "title_results[0].name",
+                          "title_results[0].year",
+                          "title_results[0].type",
+                          "title_results[0].tmdb_id"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "apiKey query parameter",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-22T03:13:19Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://api.watchmode.com/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  272120,
+                                                 "duration_ms":  220,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  30,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  30,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  31,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  36,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T20:46:15Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://api.watchmode.com/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  272120,
+                                                 "duration_ms":  478,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  36,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  30,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  37,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  31,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T20:47:03Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://api.watchmode.com/docs/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  272125,
+                                                 "duration_ms":  196,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  33,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  33,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  30,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  29,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/search/",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  50,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/search/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/search/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/search/",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  26,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/title/{id}/details/",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  39,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/title/{id}/details/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/title/{id}/details/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/title/{id}/details/",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  27,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:27:02Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://api.watchmode.com/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  272120,
+                                                 "duration_ms":  225,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  27,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  31,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  28,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  30,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/search/",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  33,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/search/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/search/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/search/",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  40,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/title/{id}/details/",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  37,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/title/{id}/details/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/title/{id}/details/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/title/{id}/details/",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  26,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:27:55Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://api.watchmode.com/docs/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  272125,
+                                                 "duration_ms":  176,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  26,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/search/?search_field=name\u0026search_value={query}\u0026apiKey={key}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  32,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  28,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/title/{title_id}/details/?apiKey={key}\u0026append_to_response=sources,cast,crew",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  32,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/search/",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  34,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/search/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/search/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/search/",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  30,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.watchmode.com/v1/title/{id}/details/",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  25,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.watchmode.com/v1/title/{id}/details/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.watchmode.com/v1/title/{id}/details/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.watchmode.com/v1/title/{id}/details/",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  27,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\movie_v1\\nonrag\\gpt\\t.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\movie_v1\\nonrag\\claude\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.8,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:41:32Z",
+                         "sdas":  0.435,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "401",
+    "best_probe_latency_ms":  25,
+    "best_probe_bytes":  true
+}

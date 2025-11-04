@@ -1,0 +1,342 @@
+﻿{
+    "service_id":  "yfapi",
+    "name":  "Yahoo Finance API",
+    "docs_url":  "https://www.yahoofinanceapi.com/docs",
+    "api_base":  "https://yfapi.net/v6",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/finance/quote"
+                      }
+                  ],
+    "keys_detected":  "{\"quoteResponse\": {\"result\": [{\"symbol\": \"AAPL\", \"regularMarketPrice\": 150.0, \"regularMarketVolume\": 1000000, \"regularMarketTime\": 1634323200}]}}",
+    "evidence_snippet":  null,
+    "auth_hint":  "API key",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-24T23:17:50Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.yahoofinanceapi.com/docs",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  15002,
+                                                 "error":  "The operation has timed out."
+                                             },
+                              "docs_error":  "The operation has timed out.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://yfapi.net/v6/finance/quote",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "84",
+                                                                "raw_bytes":  84,
+                                                                "duration_ms":  175,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://yfapi.net/v6/finance/quote",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://yfapi.net/v6/finance/quote",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://yfapi.net/v6/finance/quote",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  463,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:32:47Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.yahoofinanceapi.com/docs",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  15017,
+                                                 "error":  "The operation has timed out."
+                                             },
+                              "docs_error":  "The operation has timed out.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://yfapi.net/v6/finance/quote",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "84",
+                                                                "raw_bytes":  84,
+                                                                "duration_ms":  244,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://yfapi.net/v6/finance/quote",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://yfapi.net/v6/finance/quote",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://yfapi.net/v6/finance/quote",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  327,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:44:19Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.yahoofinanceapi.com/docs",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  15003,
+                                                 "error":  "The operation has timed out."
+                                             },
+                              "docs_error":  "The operation has timed out.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://yfapi.net/v6/finance/quote",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "84",
+                                                                "raw_bytes":  84,
+                                                                "duration_ms":  238,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://yfapi.net/v6/finance/quote",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://yfapi.net/v6/finance/quote",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://yfapi.net/v6/finance/quote",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  370,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:37:26Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.yahoofinanceapi.com/docs",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  15023,
+                                                 "error":  "The operation has timed out."
+                                             },
+                              "docs_error":  "The operation has timed out.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://yfapi.net/v6/finance/quote",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "84",
+                                                                "raw_bytes":  84,
+                                                                "duration_ms":  299,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://yfapi.net/v6/finance/quote",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://yfapi.net/v6/finance/quote",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://yfapi.net/v6/finance/quote",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  370,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:20:44Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.yahoofinanceapi.com/docs",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  15016,
+                                                 "error":  "The operation has timed out."
+                                             },
+                              "docs_error":  "The operation has timed out.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://yfapi.net/v6/finance/quote",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "84",
+                                                                "raw_bytes":  84,
+                                                                "duration_ms":  233,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://yfapi.net/v6/finance/quote",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://yfapi.net/v6/finance/quote",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://yfapi.net/v6/finance/quote",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  404,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\realtimestock_v1\\nonrag\\mistral\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.8,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:22:20Z",
+                         "sdas":  0.435,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "403",
+    "best_probe_latency_ms":  175,
+    "best_probe_bytes":  true
+}

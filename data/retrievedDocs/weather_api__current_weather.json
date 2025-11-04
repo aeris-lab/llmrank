@@ -1,0 +1,109 @@
+﻿{
+    "service_id":  "weather_api__current_weather",
+    "name":  "WeatherAPI Current Weather",
+    "docs_url":  "https://www.weatherapi.com/docs/",
+    "api_base":  "https://api.weatherapi.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/v1/current.json"
+                      }
+                  ],
+    "keys_detected":  [
+                          "current",
+                          "temp_c",
+                          "humidity",
+                          "wind_kph",
+                          "condition",
+                          "text"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "key parameter",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-28T23:41:41Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.weatherapi.com/docs/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "435745",
+                                                 "raw_bytes":  435745,
+                                                 "duration_ms":  789,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  181,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.weatherapi.com/v1/current.json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.weatherapi.com/v1/current.json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.weatherapi.com/v1/current.json",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  195,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "c"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\weather_v1\\nonrag\\deepseek\\c.json"
+                ],
+    "best_probe_status":  "401",
+    "best_probe_latency_ms":  181,
+    "best_probe_bytes":  true,
+    "solar_scores":  {
+                         "ifs":  0.25,
+                         "support_verified":  false,
+                         "fca":  0.8,
+                         "error_handling_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:43:08Z",
+                         "sdas":  0.435,
+                         "pricing_verified":  true,
+                         "constraints_verified":  false,
+                         "code_samples_verified":  false,
+                         "ssi":  0,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true
+                     }
+}
