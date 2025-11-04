@@ -1,0 +1,532 @@
+﻿{
+    "service_id":  "google-speech",
+    "name":  "Google Cloud Speech-to-Text",
+    "docs_url":  "https://cloud.google.com/speech-to-text/docs/reference/rest",
+    "api_base":  "https://speech.googleapis.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/v1/speech:recognize"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/v1/speech:longrunningrecognize"
+                      }
+                  ],
+    "keys_detected":  [
+                          "results",
+                          "alternatives",
+                          "transcript",
+                          "confidence"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "Bearer token in Authorization header",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-24T23:30:46Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/speech-to-text/docs/reference/rest",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "197083",
+                                                 "raw_bytes":  197083,
+                                                 "duration_ms":  607,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  false,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "1580",
+                                                                "raw_bytes":  1580,
+                                                                "duration_ms":  30,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "1580",
+                                                                 "raw_bytes":  1580,
+                                                                 "duration_ms":  53,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "1591",
+                                                                "raw_bytes":  1591,
+                                                                "duration_ms":  32,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "1591",
+                                                                 "raw_bytes":  1591,
+                                                                 "duration_ms":  39,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:45:55Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/speech-to-text/docs/reference/rest",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "197087",
+                                                 "raw_bytes":  197087,
+                                                 "duration_ms":  444,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  false,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "1580",
+                                                                "raw_bytes":  1580,
+                                                                "duration_ms":  35,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "1580",
+                                                                 "raw_bytes":  1580,
+                                                                 "duration_ms":  33,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "1591",
+                                                                "raw_bytes":  1591,
+                                                                "duration_ms":  39,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "1591",
+                                                                 "raw_bytes":  1591,
+                                                                 "duration_ms":  34,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:56:47Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/speech-to-text/docs/reference/rest",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "197083",
+                                                 "raw_bytes":  197083,
+                                                 "duration_ms":  714,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  false,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "1580",
+                                                                "raw_bytes":  1580,
+                                                                "duration_ms":  29,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "1580",
+                                                                 "raw_bytes":  1580,
+                                                                 "duration_ms":  37,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "1591",
+                                                                "raw_bytes":  1591,
+                                                                "duration_ms":  50,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "1591",
+                                                                 "raw_bytes":  1591,
+                                                                 "duration_ms":  30,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:50:21Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/speech-to-text/docs/reference/rest",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "197097",
+                                                 "raw_bytes":  197097,
+                                                 "duration_ms":  632,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  false,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "1580",
+                                                                "raw_bytes":  1580,
+                                                                "duration_ms":  48,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "1580",
+                                                                 "raw_bytes":  1580,
+                                                                 "duration_ms":  35,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "1591",
+                                                                "raw_bytes":  1591,
+                                                                "duration_ms":  29,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "1591",
+                                                                 "raw_bytes":  1591,
+                                                                 "duration_ms":  67,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:36:41Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/speech-to-text/docs/reference/rest",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "197083",
+                                                 "raw_bytes":  197083,
+                                                 "duration_ms":  1094,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  false,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "1580",
+                                                                "raw_bytes":  1580,
+                                                                "duration_ms":  36,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://speech.googleapis.com/v1/speech:recognize",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "1580",
+                                                                 "raw_bytes":  1580,
+                                                                 "duration_ms":  33,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "1591",
+                                                                "raw_bytes":  1591,
+                                                                "duration_ms":  38,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "1591",
+                                                                 "raw_bytes":  1591,
+                                                                 "duration_ms":  28,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\speechtext_v1\\nonrag\\deepseek\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.6,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:38:00Z",
+                         "sdas":  0.345,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "404",
+    "best_probe_latency_ms":  29,
+    "best_probe_bytes":  true
+}

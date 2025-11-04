@@ -1,0 +1,766 @@
+﻿{
+    "service_id":  "google-natural-language",
+    "name":  "Google Cloud Natural Language API",
+    "docs_url":  "https://cloud.google.com/natural-language/docs/analyzing-sentiment",
+    "api_base":  "https://language.googleapis.com/v2/documents:analyzeSentiment",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/v2/documents:analyzeSentiment"
+                      }
+                  ],
+    "keys_detected":  [
+                          "documentSentiment.score",
+                          "documentSentiment.magnitude"
+                      ],
+    "evidence_snippet":  "Search result shows response format with score and magnitude.",
+    "auth_hint":  "API key",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-21T00:57:58Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/natural-language/docs/analyzing-sentiment",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "224817",
+                                                 "raw_bytes":  224817,
+                                                 "duration_ms":  1237,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  233,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  136,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T01:22:26Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/natural-language/docs/analyzing-sentiment",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "224807",
+                                                 "raw_bytes":  224807,
+                                                 "duration_ms":  621,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  237,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  225,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T04:18:44Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/natural-language/docs/analyzing-sentiment",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "224817",
+                                                 "raw_bytes":  224817,
+                                                 "duration_ms":  416,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  69,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  216,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T04:35:17Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/natural-language/docs/analyzing-sentiment",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "224817",
+                                                 "raw_bytes":  224817,
+                                                 "duration_ms":  436,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  224,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  249,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T04:44:36Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/natural-language/docs/analyzing-sentiment",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "224807",
+                                                 "raw_bytes":  224807,
+                                                 "duration_ms":  372,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  56,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  241,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T04:53:12Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/natural-language/docs/analyzing-sentiment",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "224817",
+                                                 "raw_bytes":  224817,
+                                                 "duration_ms":  449,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  63,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  216,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T04:59:58Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/natural-language/docs/analyzing-sentiment",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "224813",
+                                                 "raw_bytes":  224813,
+                                                 "duration_ms":  821,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  54,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  73,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T23:22:39Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/natural-language/docs/analyzing-sentiment",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "229524",
+                                                 "raw_bytes":  229524,
+                                                 "duration_ms":  423,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  63,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  223,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:37:51Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/natural-language/docs/analyzing-sentiment",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "224800",
+                                                 "raw_bytes":  224800,
+                                                 "duration_ms":  466,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  66,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  217,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:48:48Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/natural-language/docs/analyzing-sentiment",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "224810",
+                                                 "raw_bytes":  224810,
+                                                 "duration_ms":  720,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  75,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  3,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  61,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:41:55Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/natural-language/docs/analyzing-sentiment",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "229528",
+                                                 "raw_bytes":  229528,
+                                                 "duration_ms":  675,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  75,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  224,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:26:25Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.google.com/natural-language/docs/analyzing-sentiment",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "227880",
+                                                 "raw_bytes":  227880,
+                                                 "duration_ms":  567,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  231,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://language.googleapis.com/v2/documents:analyzeSentiment/v2/documents:analyzeSentiment",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "0",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  251,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "I:\\UWT Courses\\Autumn 2025\\Research\\AAAI 2025\\exp\\solar-api-eval\\data\\inputs\\sentiment_v1\\nonrag\\mistral\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\sentiment_v1\\nonrag\\mistral\\v.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.6,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:27:34Z",
+                         "sdas":  0.345,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "404",
+    "best_probe_latency_ms":  54,
+    "best_probe_bytes":  false
+}

@@ -1,0 +1,350 @@
+﻿{
+    "service_id":  "google_events__discovery",
+    "name":  "Google Events Discovery API",
+    "docs_url":  "https://developers.google.com/calendar/api/v3/reference/events/list",
+    "api_base":  "https://www.googleapis.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/calendar/v3/calendars/{calendarId}/events"
+                      }
+                  ],
+    "keys_detected":  [
+                          "items",
+                          "summary",
+                          "start",
+                          "dateTime",
+                          "location",
+                          "description"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "OAuth 2.0",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-26T20:16:13Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.google.com/calendar/api/v3/reference/events/list",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "195545",
+                                                 "raw_bytes":  195545,
+                                                 "duration_ms":  580,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  142,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  154,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:11:04Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.google.com/calendar/api/v3/reference/events/list",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "195820",
+                                                 "raw_bytes":  195820,
+                                                 "duration_ms":  668,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  179,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  243,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:14:01Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.google.com/calendar/api/v3/reference/events/list",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "195824",
+                                                 "raw_bytes":  195824,
+                                                 "duration_ms":  767,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  221,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  202,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:51:30Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.google.com/calendar/api/v3/reference/events/list",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "195820",
+                                                 "raw_bytes":  195820,
+                                                 "duration_ms":  760,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  214,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  181,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:54:29Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.google.com/calendar/api/v3/reference/events/list",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "195824",
+                                                 "raw_bytes":  195824,
+                                                 "duration_ms":  1043,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  186,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  229,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\events_v1\\nonrag\\deepseek\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\events_v1\\nonrag\\deepseek\\c.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.64,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T21:59:50Z",
+                         "sdas":  0.363,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  false,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "403",
+    "best_probe_latency_ms":  142,
+    "best_probe_bytes":  true
+}

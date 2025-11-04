@@ -1,0 +1,383 @@
+﻿{
+    "service_id":  "google__geocoding",
+    "name":  "Google Maps Geocoding API",
+    "docs_url":  "https://developers.google.com/maps/documentation/geocoding/overview",
+    "api_base":  "https://maps.googleapis.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/maps/api/geocode/json"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/json"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/json?latlng={lat},{lng}"
+                      }
+                  ],
+    "keys_detected":  [
+                          "results",
+                          "status",
+                          "results[0].formatted_address",
+                          "results[0].geometry.location.lat",
+                          "results[0].geometry.location.lng"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API Key (in \u0027key\u0027 query parameter)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-26T20:36:44Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.google.com/maps/documentation/geocoding/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "202051",
+                                                 "raw_bytes":  202051,
+                                                 "duration_ms":  661,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://maps.googleapis.com/maps/api/geocode/json",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "166",
+                                                                "raw_bytes":  166,
+                                                                "duration_ms":  25,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://maps.googleapis.com/maps/api/geocode/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://maps.googleapis.com/maps/api/geocode/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://maps.googleapis.com/maps/api/geocode/json",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "166",
+                                                                 "raw_bytes":  166,
+                                                                 "duration_ms":  42,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:14:09Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.google.com/maps/documentation/geocoding/requests-geocoding",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "362619",
+                                                 "raw_bytes":  362619,
+                                                 "duration_ms":  408,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://maps.googleapis.com/maps/api/geocode/maps/api/geocode/json",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "1599",
+                                                                "raw_bytes":  1599,
+                                                                "duration_ms":  40,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://maps.googleapis.com/maps/api/geocode/maps/api/geocode/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://maps.googleapis.com/maps/api/geocode/maps/api/geocode/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://maps.googleapis.com/maps/api/geocode/maps/api/geocode/json",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "1599",
+                                                                 "raw_bytes":  1599,
+                                                                 "duration_ms":  33,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://maps.googleapis.com/maps/api/geocode/json",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "166",
+                                                                "raw_bytes":  166,
+                                                                "duration_ms":  26,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://maps.googleapis.com/maps/api/geocode/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://maps.googleapis.com/maps/api/geocode/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://maps.googleapis.com/maps/api/geocode/json",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "166",
+                                                                 "raw_bytes":  166,
+                                                                 "duration_ms":  29,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://maps.googleapis.com/maps/api/geocode/json?latlng={lat},{lng}",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "123",
+                                                                "raw_bytes":  123,
+                                                                "duration_ms":  23,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://maps.googleapis.com/maps/api/geocode/json?latlng={lat},{lng}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://maps.googleapis.com/maps/api/geocode/json?latlng={lat},{lng}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://maps.googleapis.com/maps/api/geocode/json?latlng={lat},{lng}",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "123",
+                                                                 "raw_bytes":  123,
+                                                                 "duration_ms":  44,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:15:45Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.google.com/maps/documentation/geocoding/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "202051",
+                                                 "raw_bytes":  202051,
+                                                 "duration_ms":  273,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://maps.googleapis.com/maps/api/geocode/json",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "166",
+                                                                "raw_bytes":  166,
+                                                                "duration_ms":  43,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://maps.googleapis.com/maps/api/geocode/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://maps.googleapis.com/maps/api/geocode/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://maps.googleapis.com/maps/api/geocode/json",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "166",
+                                                                 "raw_bytes":  166,
+                                                                 "duration_ms":  58,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://maps.googleapis.com/json",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "1565",
+                                                                "raw_bytes":  1565,
+                                                                "duration_ms":  26,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://maps.googleapis.com/json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://maps.googleapis.com/json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://maps.googleapis.com/json",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "1565",
+                                                                 "raw_bytes":  1565,
+                                                                 "duration_ms":  55,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://maps.googleapis.com/json?latlng={lat},{lng}",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "1592",
+                                                                "raw_bytes":  1592,
+                                                                "duration_ms":  46,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://maps.googleapis.com/json?latlng={lat},{lng}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://maps.googleapis.com/json?latlng={lat},{lng}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://maps.googleapis.com/json?latlng={lat},{lng}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "1592",
+                                                                 "raw_bytes":  1592,
+                                                                 "duration_ms":  29,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\geocoding_v1\\nonrag\\gemini\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\geocoding_v1\\nonrag\\gpt\\v.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.6,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:17:40Z",
+                         "sdas":  0.345,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "400",
+    "best_probe_latency_ms":  23,
+    "best_probe_bytes":  true
+}

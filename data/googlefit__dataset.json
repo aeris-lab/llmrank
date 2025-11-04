@@ -1,0 +1,106 @@
+﻿{
+    "service_id":  "googlefit__dataset",
+    "name":  "Google Fit REST â€” Datasets (Steps/Heart Rate)",
+    "docs_url":  "https://developers.google.com/fit/rest",
+    "api_base":  "https://www.googleapis.com/fitness/v1",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/users/me/dataset:aggregate"
+                      }
+                  ],
+    "keys_detected":  [
+                          "bucket[0].dataset[0].point[].value[].intVal",
+                          "bucket[0].dataset[1].point[].value[].fpVal",
+                          "status"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "OAuth 2.0 (Google) Bearer token",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-28T22:18:53Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.google.com/fit/rest",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "84784",
+                                                 "raw_bytes":  84784,
+                                                 "duration_ms":  345,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://www.googleapis.com/fitness/v1/users/me/dataset:aggregate",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "1598",
+                                                                "raw_bytes":  1598,
+                                                                "duration_ms":  81,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://www.googleapis.com/fitness/v1/users/me/dataset:aggregate",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://www.googleapis.com/fitness/v1/users/me/dataset:aggregate",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://www.googleapis.com/fitness/v1/users/me/dataset:aggregate",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "1598",
+                                                                 "raw_bytes":  1598,
+                                                                 "duration_ms":  156,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\health_v1\\nonrag\\gpt\\v.json"
+                ],
+    "best_probe_status":  "404",
+    "best_probe_latency_ms":  81,
+    "best_probe_bytes":  true,
+    "solar_scores":  {
+                         "ifs":  0.25,
+                         "support_verified":  false,
+                         "fca":  0.6,
+                         "error_handling_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:22:14Z",
+                         "sdas":  0.345,
+                         "pricing_verified":  true,
+                         "constraints_verified":  false,
+                         "code_samples_verified":  false,
+                         "ssi":  0,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true
+                     }
+}

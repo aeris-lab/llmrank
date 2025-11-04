@@ -1,0 +1,618 @@
+﻿{
+    "service_id":  "garmin__health_api",
+    "name":  "Garmin Health API",
+    "docs_url":  "https://developer.garmin.com/health-api/",
+    "api_base":  "https://healthapi.garmin.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/wellness/dailySummary/{date}"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/wellness-api/rest/activities"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/wellness/dailySummary/{userId}"
+                      }
+                  ],
+    "keys_detected":  [
+                          "activityName",
+                          "duration",
+                          "calories",
+                          "status",
+                          "distance",
+                          "steps",
+                          "activityType",
+                          "heartRate",
+                          "caloriesBurned",
+                          "activeMinutes",
+                          "stress"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "OAuth 2.0",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-26T20:41:53Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.garmin.com/gc-developer-program/health-api/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "92053",
+                                                 "raw_bytes":  92053,
+                                                 "duration_ms":  167,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "202",
+                                                                "raw_bytes":  202,
+                                                                "duration_ms":  99,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  104,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T20:42:06Z",
+                              "docs_status":  "404",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.garmin.com/health-api/",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  "50698",
+                                                 "raw_bytes":  50698,
+                                                 "duration_ms":  94,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "202",
+                                                                "raw_bytes":  202,
+                                                                "duration_ms":  108,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  108,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "49",
+                                                                "raw_bytes":  49,
+                                                                "duration_ms":  96,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  107,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:21:42Z",
+                              "docs_status":  "404",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.garmin.com/health-api/",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  "50698",
+                                                 "raw_bytes":  50698,
+                                                 "duration_ms":  414,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "202",
+                                                                "raw_bytes":  202,
+                                                                "duration_ms":  116,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  296,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "49",
+                                                                "raw_bytes":  49,
+                                                                "duration_ms":  99,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  122,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{userId}",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "204",
+                                                                "raw_bytes":  204,
+                                                                "duration_ms":  108,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://healthapi.garmin.com/wellness/dailySummary/{userId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{userId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://healthapi.garmin.com/wellness/dailySummary/{userId}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  332,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:21:54Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.garmin.com/gc-developer-program/health-api/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "92053",
+                                                 "raw_bytes":  92053,
+                                                 "duration_ms":  225,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "202",
+                                                                "raw_bytes":  202,
+                                                                "duration_ms":  139,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  98,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "49",
+                                                                "raw_bytes":  49,
+                                                                "duration_ms":  113,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  125,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{userId}",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "204",
+                                                                "raw_bytes":  204,
+                                                                "duration_ms":  105,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://healthapi.garmin.com/wellness/dailySummary/{userId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{userId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://healthapi.garmin.com/wellness/dailySummary/{userId}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  105,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:22:09Z",
+                              "docs_status":  "404",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.garmin.com/health-api/",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  "50698",
+                                                 "raw_bytes":  50698,
+                                                 "duration_ms":  166,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "202",
+                                                                "raw_bytes":  202,
+                                                                "duration_ms":  98,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://healthapi.garmin.com/wellness/dailySummary/{date}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  150,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "49",
+                                                                "raw_bytes":  49,
+                                                                "duration_ms":  109,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://healthapi.garmin.com/wellness-api/rest/activities",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  123,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{userId}",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "204",
+                                                                "raw_bytes":  204,
+                                                                "duration_ms":  101,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://healthapi.garmin.com/wellness/dailySummary/{userId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://healthapi.garmin.com/wellness/dailySummary/{userId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://healthapi.garmin.com/wellness/dailySummary/{userId}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  95,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\health_v1\\nonrag\\mistral\\t.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\health_v1\\nonrag\\mistral\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\health_v1\\nonrag\\mistral\\c.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.6,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:22:14Z",
+                         "sdas":  0.345,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "400",
+    "best_probe_latency_ms":  96,
+    "best_probe_bytes":  true
+}
