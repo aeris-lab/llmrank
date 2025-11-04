@@ -1,0 +1,335 @@
+﻿{
+    "service_id":  "adsb_exchange_v2",
+    "name":  "ADS-B Exchange â€” v2 API (Live positions)",
+    "docs_url":  "https://www.adsbexchange.com/version-2-api-wip/",
+    "api_base":  "https://api.adsbexchange.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/v2/icao/{hex}"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/v2/lat/{lat}/lon/{lon}/dist/{nm}"
+                      }
+                  ],
+    "keys_detected":  null,
+    "evidence_snippet":  null,
+    "auth_hint":  "API key (Enterprise/paid); some endpoints documented publicly",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-26T20:21:42Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.adsbexchange.com/version-2-api-wip/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  77058,
+                                                 "duration_ms":  303,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.adsbexchange.com/v2/icao/{hex}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=utf-8",
+                                                                "content_length_header":  "117",
+                                                                "raw_bytes":  117,
+                                                                "duration_ms":  38,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.adsbexchange.com/v2/icao/{hex}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.adsbexchange.com/v2/icao/{hex}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.adsbexchange.com/v2/icao/{hex}",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=utf-8",
+                                                                 "content_length_header":  "117",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  168,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.adsbexchange.com/v2/lat/{lat}/lon/{lon}/dist/{nm}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=utf-8",
+                                                                "content_length_header":  "117",
+                                                                "raw_bytes":  117,
+                                                                "duration_ms":  37,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.adsbexchange.com/v2/lat/{lat}/lon/{lon}/dist/{nm}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.adsbexchange.com/v2/lat/{lat}/lon/{lon}/dist/{nm}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.adsbexchange.com/v2/lat/{lat}/lon/{lon}/dist/{nm}",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=utf-8",
+                                                                 "content_length_header":  "117",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  39,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:23:03Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.adsbexchange.com/version-2-api-wip/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  77058,
+                                                 "duration_ms":  838,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.adsbexchange.com/v2/icao/{hex}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=utf-8",
+                                                                "content_length_header":  "117",
+                                                                "raw_bytes":  117,
+                                                                "duration_ms":  42,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.adsbexchange.com/v2/icao/{hex}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.adsbexchange.com/v2/icao/{hex}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.adsbexchange.com/v2/icao/{hex}",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=utf-8",
+                                                                 "content_length_header":  "117",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  252,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.adsbexchange.com/v2/lat/{lat}/lon/{lon}/dist/{nm}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=utf-8",
+                                                                "content_length_header":  "117",
+                                                                "raw_bytes":  117,
+                                                                "duration_ms":  50,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.adsbexchange.com/v2/lat/{lat}/lon/{lon}/dist/{nm}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.adsbexchange.com/v2/lat/{lat}/lon/{lon}/dist/{nm}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.adsbexchange.com/v2/lat/{lat}/lon/{lon}/dist/{nm}",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=utf-8",
+                                                                 "content_length_header":  "117",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  59,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:00:44Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.adsbexchange.com/version-2-api-wip/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  77058,
+                                                 "duration_ms":  315,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.adsbexchange.com/v2/icao/{hex}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=utf-8",
+                                                                "content_length_header":  "117",
+                                                                "raw_bytes":  117,
+                                                                "duration_ms":  59,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.adsbexchange.com/v2/icao/{hex}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.adsbexchange.com/v2/icao/{hex}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.adsbexchange.com/v2/icao/{hex}",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=utf-8",
+                                                                 "content_length_header":  "117",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  169,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.adsbexchange.com/v2/lat/{lat}/lon/{lon}/dist/{nm}",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=utf-8",
+                                                                "content_length_header":  "117",
+                                                                "raw_bytes":  117,
+                                                                "duration_ms":  41,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.adsbexchange.com/v2/lat/{lat}/lon/{lon}/dist/{nm}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.adsbexchange.com/v2/lat/{lat}/lon/{lon}/dist/{nm}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.adsbexchange.com/v2/lat/{lat}/lon/{lon}/dist/{nm}",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=utf-8",
+                                                                 "content_length_header":  "117",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  48,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\flighttracker_v1\\nonrag\\gpt\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.8,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:13:09Z",
+                         "sdas":  0.435,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  false,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "200",
+    "best_probe_latency_ms":  37,
+    "best_probe_bytes":  true
+}

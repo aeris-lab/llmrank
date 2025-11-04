@@ -1,0 +1,1081 @@
+﻿{
+    "service_id":  "airlabs__flight_tracker",
+    "name":  "AirLabs Flight Tracker API",
+    "docs_url":  "https://airlabs.co/docs/flights",
+    "api_base":  "https://airlabs.co/api/v9",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/api/v9/flight"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/flights"
+                      }
+                  ],
+    "keys_detected":  [
+                          "flight_number",
+                          "status",
+                          "lat",
+                          "lng",
+                          "alt",
+                          "speed",
+                          "updated",
+                          "response",
+                          "dir",
+                          "request",
+                          "terms"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API Key (query parameter)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-22T02:54:27Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://airlabs.co/docs/flight-tracker",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  323,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/flight",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "273",
+                                                                "raw_bytes":  273,
+                                                                "duration_ms":  267,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/flight",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/flight",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/flight",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "273",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  278,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-22T02:55:38Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://airlabs.co/docs/flights",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  40905,
+                                                 "duration_ms":  218,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "280",
+                                                                "raw_bytes":  280,
+                                                                "duration_ms":  274,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "280",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  277,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/flights",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "273",
+                                                                "raw_bytes":  273,
+                                                                "duration_ms":  273,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/flights",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "273",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  270,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T20:28:41Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://airlabs.co/docs/flight-tracker",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  311,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/flight",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "273",
+                                                                "raw_bytes":  273,
+                                                                "duration_ms":  259,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/flight",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/flight",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/flight",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "273",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  257,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/flights",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  257,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://airlabs.co/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/flights",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  315,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T20:32:56Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://airlabs.co/docs/flight/",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  395,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "280",
+                                                                "raw_bytes":  280,
+                                                                "duration_ms":  275,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "280",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  285,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/flights",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "273",
+                                                                "raw_bytes":  273,
+                                                                "duration_ms":  274,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/flights",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "273",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  275,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T20:33:18Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://airlabs.co/docs/flights",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  40905,
+                                                 "duration_ms":  224,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "280",
+                                                                "raw_bytes":  280,
+                                                                "duration_ms":  257,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "280",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  272,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/flights",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "273",
+                                                                "raw_bytes":  273,
+                                                                "duration_ms":  265,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/flights",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "273",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  262,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:30:10Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://airlabs.co/docs/flight-tracker",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  325,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/flight",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "273",
+                                                                "raw_bytes":  273,
+                                                                "duration_ms":  309,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/flight",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/flight",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/flight",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "273",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  281,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/flights",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  342,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://airlabs.co/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/flights",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  326,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:34:17Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://airlabs.co/docs/flight/",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  845,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "280",
+                                                                "raw_bytes":  280,
+                                                                "duration_ms":  296,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "280",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  311,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/flights",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "273",
+                                                                "raw_bytes":  273,
+                                                                "duration_ms":  292,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/flights",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "273",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  292,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:34:39Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://airlabs.co/docs/flights",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  40905,
+                                                 "duration_ms":  261,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "280",
+                                                                "raw_bytes":  280,
+                                                                "duration_ms":  289,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "280",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  291,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/flights",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "273",
+                                                                "raw_bytes":  273,
+                                                                "duration_ms":  844,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/flights",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "273",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  306,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:07:42Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://airlabs.co/docs/flight-tracker",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  327,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/flight",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "273",
+                                                                "raw_bytes":  273,
+                                                                "duration_ms":  293,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/flight",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/flight",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/flight",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "273",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  269,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/flights",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  267,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://airlabs.co/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/flights",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  315,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:11:40Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://airlabs.co/docs/flight/",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  395,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "280",
+                                                                "raw_bytes":  280,
+                                                                "duration_ms":  275,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "280",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  281,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/flights",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "273",
+                                                                "raw_bytes":  273,
+                                                                "duration_ms":  312,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/flights",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "273",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  284,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:12:02Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://airlabs.co/docs/flights",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  40905,
+                                                 "duration_ms":  258,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "280",
+                                                                "raw_bytes":  280,
+                                                                "duration_ms":  432,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/api/v9/flight",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "280",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  284,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://airlabs.co/api/v9/flights",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "273",
+                                                                "raw_bytes":  273,
+                                                                "duration_ms":  289,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://airlabs.co/api/v9/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://airlabs.co/api/v9/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://airlabs.co/api/v9/flights",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "273",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  290,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\flighttracker_v1\\nonrag\\gemini\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\flighttracker_v1\\nonrag\\mistral\\c.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\flighttracker_v1\\nonrag\\deepseek\\v.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  1,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:13:09Z",
+                         "sdas":  0.525,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "200",
+    "best_probe_latency_ms":  257,
+    "best_probe_bytes":  true
+}

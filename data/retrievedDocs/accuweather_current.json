@@ -1,0 +1,306 @@
+﻿{
+    "service_id":  "accuweather_current",
+    "name":  "AccuWeather Current Conditions API",
+    "docs_url":  "https://developer.accuweather.com/accuweather-current-conditions-api/apis/get/currentconditions/v1/%7BlocationKey%7D",
+    "api_base":  "https://dataservice.accuweather.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/currentconditions/v1/{locationKey}"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/currentconditions/v1/{locationKey}?apikey={API_key}\u0026details=true"
+                      }
+                  ],
+    "keys_detected":  [
+                          "[0].Temperature.Metric.Value",
+                          "[0].RelativeHumidity",
+                          "[0].Wind.Speed.Metric.Value",
+                          "[0].WeatherText",
+                          "HTTP_status_code (200)"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API Key (`apikey` query parameter)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-26T22:08:01Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.accuweather.com/accuweather-current-conditions-api/apis/get/currentconditions/v1/%7BlocationKey%7D",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "23695",
+                                                 "raw_bytes":  23695,
+                                                 "duration_ms":  912,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/problem+json",
+                                                                "content_length_header":  "375",
+                                                                "raw_bytes":  375,
+                                                                "duration_ms":  88,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/problem+json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  83,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:39:11Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.accuweather.com/apis",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  262613,
+                                                 "duration_ms":  847,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/problem+json",
+                                                                "content_length_header":  "377",
+                                                                "raw_bytes":  377,
+                                                                "duration_ms":  83,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/problem+json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  77,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}?apikey={API_key}\u0026details=true",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/problem+json",
+                                                                "content_length_header":  "407",
+                                                                "raw_bytes":  407,
+                                                                "duration_ms":  144,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}?apikey={API_key}\u0026details=true",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}?apikey={API_key}\u0026details=true",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}?apikey={API_key}\u0026details=true",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/problem+json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  82,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:41:05Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.accuweather.com/accuweather-current-conditions-api/apis/get/currentconditions/v1/%7BlocationKey%7D",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "23695",
+                                                 "raw_bytes":  23695,
+                                                 "duration_ms":  1101,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/problem+json",
+                                                                "content_length_header":  "377",
+                                                                "raw_bytes":  377,
+                                                                "duration_ms":  124,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/problem+json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  114,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}?apikey={API_key}\u0026details=true",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/problem+json",
+                                                                "content_length_header":  "407",
+                                                                "raw_bytes":  407,
+                                                                "duration_ms":  158,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}?apikey={API_key}\u0026details=true",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}?apikey={API_key}\u0026details=true",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}?apikey={API_key}\u0026details=true",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/problem+json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  104,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\weather_v1\\nonrag\\gemini\\t.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\weather_v1\\nonrag\\gpt\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.8,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:43:02Z",
+                         "sdas":  0.435,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "401",
+    "best_probe_latency_ms":  83,
+    "best_probe_bytes":  true
+}

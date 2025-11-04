@@ -1,0 +1,107 @@
+﻿{
+    "service_id":  "accuweather",
+    "name":  "AccuWeather API",
+    "docs_url":  "https://developer.accuweather.com/accuweather-current-conditions-api/apis",
+    "api_base":  "https://dataservice.accuweather.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/currentconditions/v1/{locationKey}"
+                      }
+                  ],
+    "keys_detected":  [
+                          "[0].Temperature.Metric.Value",
+                          "[0].RelativeHumidity",
+                          "[0].Wind.Speed.Metric.Value",
+                          "[0].WeatherText"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "apikey query parameter",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-28T23:40:19Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.accuweather.com/accuweather-current-conditions-api/apis",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "23695",
+                                                 "raw_bytes":  23695,
+                                                 "duration_ms":  515,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/problem+json",
+                                                                "content_length_header":  "376",
+                                                                "raw_bytes":  376,
+                                                                "duration_ms":  142,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://dataservice.accuweather.com/currentconditions/v1/{locationKey}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/problem+json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  82,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\weather_v1\\nonrag\\claude\\t.json"
+                ],
+    "best_probe_status":  "401",
+    "best_probe_latency_ms":  142,
+    "best_probe_bytes":  true,
+    "solar_scores":  {
+                         "ifs":  0.25,
+                         "support_verified":  false,
+                         "fca":  0.8,
+                         "error_handling_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:43:02Z",
+                         "sdas":  0.435,
+                         "pricing_verified":  true,
+                         "constraints_verified":  false,
+                         "code_samples_verified":  false,
+                         "ssi":  0,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true
+                     }
+}

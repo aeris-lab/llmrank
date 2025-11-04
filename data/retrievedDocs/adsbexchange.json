@@ -1,0 +1,693 @@
+﻿{
+    "service_id":  "adsbexchange",
+    "name":  "ADSBexchange",
+    "docs_url":  "https://adsbexchange.com/data/",
+    "api_base":  "https://adsbexchange.com/api",
+    "endpoints":  [
+                      {
+                          "requires_auth":  false,
+                          "method":  "GET",
+                          "path":  "/flights"
+                      },
+                      {
+                          "requires_auth":  false,
+                          "method":  "GET",
+                          "path":  "/api/aircraft/json/"
+                      }
+                  ],
+    "keys_detected":  [
+                          "{\"data\": [{\"flight_number\": \"SW123\", \"status\": \"en-route\", \"lat\": 33.4484, \"lon\": -112.0740, \"alt\": 25000, \"speed\": 450, \"timestamp\": 1634323200}]}",
+                          "ac",
+                          "flight",
+                          "lat",
+                          "lon",
+                          "alt",
+                          "gs",
+                          "postime"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "None",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-22T02:56:10Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://adsbexchange.com/data/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  72471,
+                                                 "duration_ms":  414,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://adsbexchange.com/api/flights",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  291,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://adsbexchange.com/api/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://adsbexchange.com/api/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://adsbexchange.com/api/flights",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  226,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T20:31:44Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.adsbexchange.com/data/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  72471,
+                                                 "duration_ms":  535,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://adsbexchange.com/flights",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  309,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://adsbexchange.com/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://adsbexchange.com/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://adsbexchange.com/flights",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  260,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://adsbexchange.com/api/aircraft/json/",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  11,
+                                                                "duration_ms":  47,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://adsbexchange.com/api/aircraft/json/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://adsbexchange.com/api/aircraft/json/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://adsbexchange.com/api/aircraft/json/",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  36,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T20:33:58Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://adsbexchange.com/data/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  72471,
+                                                 "duration_ms":  367,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://adsbexchange.com/api/flights",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  322,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://adsbexchange.com/api/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://adsbexchange.com/api/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://adsbexchange.com/api/flights",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  212,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://adsbexchange.com/api/api/aircraft/json/",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  292,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://adsbexchange.com/api/api/aircraft/json/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://adsbexchange.com/api/api/aircraft/json/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://adsbexchange.com/api/api/aircraft/json/",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  174,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:33:03Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.adsbexchange.com/data/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  72471,
+                                                 "duration_ms":  667,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://adsbexchange.com/flights",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  508,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://adsbexchange.com/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://adsbexchange.com/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://adsbexchange.com/flights",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  522,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://adsbexchange.com/api/aircraft/json/",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  11,
+                                                                "duration_ms":  43,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://adsbexchange.com/api/aircraft/json/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://adsbexchange.com/api/aircraft/json/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://adsbexchange.com/api/aircraft/json/",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  58,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:35:23Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://adsbexchange.com/data/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  72471,
+                                                 "duration_ms":  408,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://adsbexchange.com/api/flights",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  309,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://adsbexchange.com/api/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://adsbexchange.com/api/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://adsbexchange.com/api/flights",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  203,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://adsbexchange.com/api/api/aircraft/json/",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  293,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://adsbexchange.com/api/api/aircraft/json/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://adsbexchange.com/api/api/aircraft/json/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://adsbexchange.com/api/api/aircraft/json/",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  187,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:10:28Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.adsbexchange.com/data/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  72471,
+                                                 "duration_ms":  480,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://adsbexchange.com/flights",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  371,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://adsbexchange.com/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://adsbexchange.com/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://adsbexchange.com/flights",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  251,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://adsbexchange.com/api/aircraft/json/",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  11,
+                                                                "duration_ms":  40,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://adsbexchange.com/api/aircraft/json/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://adsbexchange.com/api/aircraft/json/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://adsbexchange.com/api/aircraft/json/",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  85,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:12:40Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://adsbexchange.com/data/",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  72471,
+                                                 "duration_ms":  318,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://adsbexchange.com/api/flights",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  285,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://adsbexchange.com/api/flights",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://adsbexchange.com/api/flights",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://adsbexchange.com/api/flights",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  181,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://adsbexchange.com/api/api/aircraft/json/",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  284,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://adsbexchange.com/api/api/aircraft/json/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://adsbexchange.com/api/api/aircraft/json/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://adsbexchange.com/api/api/aircraft/json/",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  209,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\flighttracker_v1\\nonrag\\mistral\\t.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\flighttracker_v1\\nonrag\\deepseek\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  1,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:13:08Z",
+                         "sdas":  0.525,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "200",
+    "best_probe_latency_ms":  40,
+    "best_probe_bytes":  true
+}

@@ -1,0 +1,1375 @@
+﻿{
+    "service_id":  "amazonpay__charges",
+    "name":  "Amazon Pay â€“ Charges API",
+    "docs_url":  "https://developer.amazon.com/docs/amazon-pay-api-v2/charge.html",
+    "api_base":  "https://pay-api.amazon.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/v2/charges"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/v2/charges/{chargeId}"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/v2/charges/{chargeId}/capture"
+                      }
+                  ],
+    "keys_detected":  [
+                          "chargeId",
+                          "statusDetails.state"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "Signed requests (Amazon Pay signature scheme with public/private key)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-21T22:59:35Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.amazon.com/docs/amazon-pay-api-v2/charge.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  500745,
+                                                 "duration_ms":  1912,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  103,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  503,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  105,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  103,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  94,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  91,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T22:35:37Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.amazon.com/docs/amazon-pay-api-v2/charge.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  500770,
+                                                 "duration_ms":  3672,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  110,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  557,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  109,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  105,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  96,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  99,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:06:22Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.amazon.com/docs/amazon-pay-api-v2/charge.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  500770,
+                                                 "duration_ms":  4330,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  122,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  662,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  123,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  115,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  127,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  114,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:18:05Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.amazon.com/docs/amazon-pay-api-v2/charge.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  500770,
+                                                 "duration_ms":  2919,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  113,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  563,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  98,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  175,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  98,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  92,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T19:07:57Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.amazon.com/docs/amazon-pay-api-v2/charge.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  500770,
+                                                 "duration_ms":  3003,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  102,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  546,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  96,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  90,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  103,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  99,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T19:28:04Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.amazon.com/docs/amazon-pay-api-v2/charge.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  500770,
+                                                 "duration_ms":  3011,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  102,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  640,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  102,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  117,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  104,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  96,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T19:32:49Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.amazon.com/docs/amazon-pay-api-v2/charge.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  500770,
+                                                 "duration_ms":  2944,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  100,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  587,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  94,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  91,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  100,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  101,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T19:44:51Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.amazon.com/docs/amazon-pay-api-v2/charge.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  500770,
+                                                 "duration_ms":  3328,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  136,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  584,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  98,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  96,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  125,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  103,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:07:16Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.amazon.com/docs/amazon-pay-api-v2/charge.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  503764,
+                                                 "duration_ms":  1379,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  109,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  559,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  101,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  102,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  99,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  105,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:48:39Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.amazon.com/docs/amazon-pay-api-v2/charge.html",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  503653,
+                                                 "duration_ms":  1356,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  97,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  581,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  98,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  94,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "119",
+                                                                "raw_bytes":  119,
+                                                                "duration_ms":  102,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pay-api.amazon.com/v2/charges/{chargeId}/capture",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  95,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\payments_v1\\nonrag\\gpt\\v.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.6,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:53:57Z",
+                         "sdas":  0.345,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "400",
+    "best_probe_latency_ms":  94,
+    "best_probe_bytes":  true
+}

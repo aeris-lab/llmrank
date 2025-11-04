@@ -1,0 +1,108 @@
+﻿{
+    "service_id":  "album_track_search_rapidapi",
+    "name":  "Album \u0026 Track Search (RapidAPI)",
+    "docs_url":  "https://rapidapi.com/lucas_39/api/album-track-search",
+    "api_base":  "https://album-track-search.p.rapidapi.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/search/"
+                      }
+                  ],
+    "keys_detected":  [
+                          "results[0].name",
+                          "results[0].artist_name",
+                          "results[0].album_name",
+                          "results[0].release_date",
+                          "results[0].genre"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "RapidAPI Key (header: `x-rapidapi-key`)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-28T22:44:24Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://rapidapi.com/lucas_39/api/album-track-search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  276826,
+                                                 "duration_ms":  368,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://album-track-search.p.rapidapi.com/search/",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  44,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://album-track-search.p.rapidapi.com/search/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://album-track-search.p.rapidapi.com/search/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://album-track-search.p.rapidapi.com/search/",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  347,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\music_v1\\nonrag\\gemini\\t.json"
+                ],
+    "best_probe_status":  "429",
+    "best_probe_latency_ms":  44,
+    "best_probe_bytes":  true,
+    "solar_scores":  {
+                         "ifs":  0.25,
+                         "support_verified":  false,
+                         "fca":  0.6,
+                         "error_handling_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:47:04Z",
+                         "sdas":  0.345,
+                         "pricing_verified":  true,
+                         "constraints_verified":  false,
+                         "code_samples_verified":  false,
+                         "ssi":  0,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true
+                     }
+}

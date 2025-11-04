@@ -1,0 +1,168 @@
+﻿{
+    "service_id":  "active_com__events",
+    "name":  "Active.com Events API",
+    "docs_url":  "https://developer.active.com/docs/read/Events_API",
+    "api_base":  "https://api.amp.active.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/v2/search?query=running\u0026near={city},{state}\u0026radius={miles}\u0026start_date={date}"
+                      }
+                  ],
+    "keys_detected":  [
+                          "results[].assetName",
+                          "results[].activityStartDate",
+                          "results[].place.placeName",
+                          "results[].place.addressLine1",
+                          "results[].assetDescriptions[].description"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API key via api_key query parameter",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-28T21:06:35Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.active.com/docs/read/Events_API",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "15377",
+                                                 "raw_bytes":  15377,
+                                                 "duration_ms":  191,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.amp.active.com/v2/search?query=running\u0026near={city},{state}\u0026radius={miles}\u0026start_date={date}",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/xml",
+                                                                "content_length_header":  "27",
+                                                                "raw_bytes":  27,
+                                                                "duration_ms":  95,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://api.amp.active.com/v2/search?query=running\u0026near={city},{state}\u0026radius={miles}\u0026start_date={date}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.amp.active.com/v2/search?query=running\u0026near={city},{state}\u0026radius={miles}\u0026start_date={date}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.amp.active.com/v2/search?query=running\u0026near={city},{state}\u0026radius={miles}\u0026start_date={date}",
+                                                                 "status":  "596",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/xml",
+                                                                 "content_length_header":  "30",
+                                                                 "raw_bytes":  30,
+                                                                 "duration_ms":  303,
+                                                                 "error":  "The remote server returned an error: (596) 596."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:47:05Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.active.com/docs/read/Events_API",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "15377",
+                                                 "raw_bytes":  15377,
+                                                 "duration_ms":  187,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.amp.active.com/v2/search?query=running\u0026near={city},{state}\u0026radius={miles}\u0026start_date={date}",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/xml",
+                                                                "content_length_header":  "27",
+                                                                "raw_bytes":  27,
+                                                                "duration_ms":  110,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://api.amp.active.com/v2/search?query=running\u0026near={city},{state}\u0026radius={miles}\u0026start_date={date}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.amp.active.com/v2/search?query=running\u0026near={city},{state}\u0026radius={miles}\u0026start_date={date}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.amp.active.com/v2/search?query=running\u0026near={city},{state}\u0026radius={miles}\u0026start_date={date}",
+                                                                 "status":  "596",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/xml",
+                                                                 "content_length_header":  "30",
+                                                                 "raw_bytes":  30,
+                                                                 "duration_ms":  290,
+                                                                 "error":  "The remote server returned an error: (596) 596."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\events_v1\\nonrag\\claude\\v.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.8,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T21:59:49Z",
+                         "sdas":  0.435,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "403",
+    "best_probe_latency_ms":  95,
+    "best_probe_bytes":  true
+}

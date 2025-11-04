@@ -1,0 +1,705 @@
+﻿{
+    "service_id":  "amazon-comprehend",
+    "name":  "Amazon Comprehend - Sentiment",
+    "docs_url":  "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectSentiment.html",
+    "api_base":  "https://comprehend.{region}.amazonaws.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/"
+                      }
+                  ],
+    "keys_detected":  [
+                          "Sentiment",
+                          "SentimentScore"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "AWS Signature Version 4",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-21T01:18:43Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectSentiment.html",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "21197",
+                                                 "raw_bytes":  21197,
+                                                 "duration_ms":  141,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T04:16:34Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectSentiment.html",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "21197",
+                                                 "raw_bytes":  21197,
+                                                 "duration_ms":  187,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T04:33:04Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectSentiment.html",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "21197",
+                                                 "raw_bytes":  21197,
+                                                 "duration_ms":  160,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T04:42:34Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectSentiment.html",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "21197",
+                                                 "raw_bytes":  21197,
+                                                 "duration_ms":  114,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T04:51:12Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectSentiment.html",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "21197",
+                                                 "raw_bytes":  21197,
+                                                 "duration_ms":  124,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T04:58:16Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectSentiment.html",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "21197",
+                                                 "raw_bytes":  21197,
+                                                 "duration_ms":  121,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T23:21:50Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectSentiment.html",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "21197",
+                                                 "raw_bytes":  21197,
+                                                 "duration_ms":  159,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:37:07Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectSentiment.html",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "21197",
+                                                 "raw_bytes":  21197,
+                                                 "duration_ms":  128,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:48:05Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectSentiment.html",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "21197",
+                                                 "raw_bytes":  21197,
+                                                 "duration_ms":  166,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:41:12Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectSentiment.html",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "21197",
+                                                 "raw_bytes":  21197,
+                                                 "duration_ms":  106,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:25:11Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://docs.aws.amazon.com/comprehend/latest/dg/API_DetectSentiment.html",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "21197",
+                                                 "raw_bytes":  21197,
+                                                 "duration_ms":  174,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://comprehend.{region}.amazonaws.com/",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://comprehend.{region}.amazonaws.com/\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\sentiment_v1\\nonrag\\deepseek\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:27:31Z",
+                         "sdas":  0.075,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "ERR",
+    "best_probe_latency_ms":  0,
+    "best_probe_bytes":  false
+}

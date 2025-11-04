@@ -1,0 +1,168 @@
+﻿{
+    "service_id":  "allevents__events_search",
+    "name":  "AllEvents.in â€” Events Search",
+    "docs_url":  "https://allevents.in/api#events",
+    "api_base":  "https://allevents.in",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/api/events/search/?city={city}\u0026s={query}\u0026date={date}\u0026app_key=YOUR_KEY"
+                      }
+                  ],
+    "keys_detected":  [
+                          "data[0].eventname",
+                          "data[0].start_time",
+                          "data[0].venue",
+                          "data[0].location",
+                          "data[0].description"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API key (?app_key=YOUR_KEY)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-28T21:04:54Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://allevents.in/api#events",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  505227,
+                                                 "duration_ms":  1013,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://allevents.in/api/events/search/?city={city}\u0026s={query}\u0026date={date}\u0026app_key=YOUR_KEY",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html;charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  179,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://allevents.in/api/events/search/?city={city}\u0026s={query}\u0026date={date}\u0026app_key=YOUR_KEY",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://allevents.in/api/events/search/?city={city}\u0026s={query}\u0026date={date}\u0026app_key=YOUR_KEY",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://allevents.in/api/events/search/?city={city}\u0026s={query}\u0026date={date}\u0026app_key=YOUR_KEY",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html;charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  171,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:45:28Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://allevents.in/api#events",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  505496,
+                                                 "duration_ms":  815,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://allevents.in/api/events/search/?city={city}\u0026s={query}\u0026date={date}\u0026app_key=YOUR_KEY",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html;charset=UTF-8",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  232,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://allevents.in/api/events/search/?city={city}\u0026s={query}\u0026date={date}\u0026app_key=YOUR_KEY",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://allevents.in/api/events/search/?city={city}\u0026s={query}\u0026date={date}\u0026app_key=YOUR_KEY",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://allevents.in/api/events/search/?city={city}\u0026s={query}\u0026date={date}\u0026app_key=YOUR_KEY",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html;charset=UTF-8",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  181,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "c"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\events_v1\\nonrag\\gpt\\c.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.48,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T21:59:49Z",
+                         "sdas":  0.291,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  false,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "404",
+    "best_probe_latency_ms":  179,
+    "best_probe_bytes":  true
+}

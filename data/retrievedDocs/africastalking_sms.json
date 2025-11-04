@@ -1,0 +1,948 @@
+﻿{
+    "service_id":  "africastalking_sms",
+    "name":  "Africa\u0027s Talking SMS API",
+    "docs_url":  "https://developers.africastalking.com/docs/sms/overview",
+    "api_base":  "https://api.africastalking.com/version1/",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/messaging"
+                      }
+                  ],
+    "keys_detected":  [
+                          "SMSMessageData",
+                          "Message",
+                          "Recipients",
+                          "status",
+                          "messageId"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API Key",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-24T17:46:47Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.africastalking.com/docs/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14391,
+                                                 "duration_ms":  319,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=UTF-8",
+                                                                "content_length_header":  "54",
+                                                                "raw_bytes":  54,
+                                                                "duration_ms":  163,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.africastalking.com/version1/messaging",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.africastalking.com/version1/messaging",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=UTF-8",
+                                                                 "content_length_header":  "53",
+                                                                 "raw_bytes":  53,
+                                                                 "duration_ms":  156,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T17:58:50Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.africastalking.com/docs/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14391,
+                                                 "duration_ms":  361,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=UTF-8",
+                                                                "content_length_header":  "54",
+                                                                "raw_bytes":  54,
+                                                                "duration_ms":  159,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.africastalking.com/version1/messaging",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.africastalking.com/version1/messaging",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=UTF-8",
+                                                                 "content_length_header":  "53",
+                                                                 "raw_bytes":  53,
+                                                                 "duration_ms":  168,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:22:25Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.africastalking.com/docs/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14391,
+                                                 "duration_ms":  329,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=UTF-8",
+                                                                "content_length_header":  "54",
+                                                                "raw_bytes":  54,
+                                                                "duration_ms":  166,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.africastalking.com/version1/messaging",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.africastalking.com/version1/messaging",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=UTF-8",
+                                                                 "content_length_header":  "53",
+                                                                 "raw_bytes":  53,
+                                                                 "duration_ms":  170,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:24:13Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.africastalking.com/docs/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14391,
+                                                 "duration_ms":  314,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=UTF-8",
+                                                                "content_length_header":  "54",
+                                                                "raw_bytes":  54,
+                                                                "duration_ms":  162,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.africastalking.com/version1/messaging",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.africastalking.com/version1/messaging",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=UTF-8",
+                                                                 "content_length_header":  "53",
+                                                                 "raw_bytes":  53,
+                                                                 "duration_ms":  165,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:30:52Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.africastalking.com/docs/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14391,
+                                                 "duration_ms":  334,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=UTF-8",
+                                                                "content_length_header":  "54",
+                                                                "raw_bytes":  54,
+                                                                "duration_ms":  167,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.africastalking.com/version1/messaging",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.africastalking.com/version1/messaging",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=UTF-8",
+                                                                 "content_length_header":  "53",
+                                                                 "raw_bytes":  53,
+                                                                 "duration_ms":  170,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:37:40Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.africastalking.com/docs/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14391,
+                                                 "duration_ms":  347,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=UTF-8",
+                                                                "content_length_header":  "54",
+                                                                "raw_bytes":  54,
+                                                                "duration_ms":  167,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.africastalking.com/version1/messaging",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.africastalking.com/version1/messaging",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=UTF-8",
+                                                                 "content_length_header":  "53",
+                                                                 "raw_bytes":  53,
+                                                                 "duration_ms":  178,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:13:49Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.africastalking.com/docs/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14391,
+                                                 "duration_ms":  422,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=UTF-8",
+                                                                "content_length_header":  "54",
+                                                                "raw_bytes":  54,
+                                                                "duration_ms":  164,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.africastalking.com/version1/messaging",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.africastalking.com/version1/messaging",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=UTF-8",
+                                                                 "content_length_header":  "53",
+                                                                 "raw_bytes":  53,
+                                                                 "duration_ms":  222,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:26:03Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.africastalking.com/docs/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14391,
+                                                 "duration_ms":  352,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=UTF-8",
+                                                                "content_length_header":  "54",
+                                                                "raw_bytes":  54,
+                                                                "duration_ms":  164,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.africastalking.com/version1/messaging",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.africastalking.com/version1/messaging",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=UTF-8",
+                                                                 "content_length_header":  "53",
+                                                                 "raw_bytes":  53,
+                                                                 "duration_ms":  166,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:32:04Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.africastalking.com/docs/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14391,
+                                                 "duration_ms":  655,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=UTF-8",
+                                                                "content_length_header":  "54",
+                                                                "raw_bytes":  54,
+                                                                "duration_ms":  172,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.africastalking.com/version1/messaging",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.africastalking.com/version1/messaging",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=UTF-8",
+                                                                 "content_length_header":  "53",
+                                                                 "raw_bytes":  53,
+                                                                 "duration_ms":  175,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:42:19Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.africastalking.com/docs/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14391,
+                                                 "duration_ms":  329,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=UTF-8",
+                                                                "content_length_header":  "54",
+                                                                "raw_bytes":  54,
+                                                                "duration_ms":  162,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.africastalking.com/version1/messaging",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.africastalking.com/version1/messaging",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=UTF-8",
+                                                                 "content_length_header":  "53",
+                                                                 "raw_bytes":  53,
+                                                                 "duration_ms":  165,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T23:26:11Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.africastalking.com/docs/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14391,
+                                                 "duration_ms":  316,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=UTF-8",
+                                                                "content_length_header":  "54",
+                                                                "raw_bytes":  54,
+                                                                "duration_ms":  157,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.africastalking.com/version1/messaging",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.africastalking.com/version1/messaging",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=UTF-8",
+                                                                 "content_length_header":  "53",
+                                                                 "raw_bytes":  53,
+                                                                 "duration_ms":  171,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:41:22Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.africastalking.com/docs/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14391,
+                                                 "duration_ms":  325,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=UTF-8",
+                                                                "content_length_header":  "54",
+                                                                "raw_bytes":  54,
+                                                                "duration_ms":  177,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.africastalking.com/version1/messaging",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.africastalking.com/version1/messaging",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=UTF-8",
+                                                                 "content_length_header":  "53",
+                                                                 "raw_bytes":  53,
+                                                                 "duration_ms":  164,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:52:19Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.africastalking.com/docs/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14391,
+                                                 "duration_ms":  324,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=UTF-8",
+                                                                "content_length_header":  "54",
+                                                                "raw_bytes":  54,
+                                                                "duration_ms":  170,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.africastalking.com/version1/messaging",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.africastalking.com/version1/messaging",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=UTF-8",
+                                                                 "content_length_header":  "53",
+                                                                 "raw_bytes":  53,
+                                                                 "duration_ms":  174,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:45:48Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.africastalking.com/docs/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14391,
+                                                 "duration_ms":  953,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=UTF-8",
+                                                                "content_length_header":  "54",
+                                                                "raw_bytes":  54,
+                                                                "duration_ms":  165,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.africastalking.com/version1/messaging",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.africastalking.com/version1/messaging",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=UTF-8",
+                                                                 "content_length_header":  "53",
+                                                                 "raw_bytes":  53,
+                                                                 "duration_ms":  172,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:30:19Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.africastalking.com/docs/sms/overview",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14391,
+                                                 "duration_ms":  345,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/plain; charset=UTF-8",
+                                                                "content_length_header":  "54",
+                                                                "raw_bytes":  54,
+                                                                "duration_ms":  163,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.africastalking.com/version1/messaging",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.africastalking.com/version1/messaging",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.africastalking.com/version1/messaging",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/plain; charset=UTF-8",
+                                                                 "content_length_header":  "53",
+                                                                 "raw_bytes":  53,
+                                                                 "duration_ms":  182,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\sms_v1\\nonrag\\deepseek\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.6,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:32:15Z",
+                         "sdas":  0.345,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "404",
+    "best_probe_latency_ms":  157,
+    "best_probe_bytes":  true
+}

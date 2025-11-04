@@ -1,0 +1,168 @@
+﻿{
+    "service_id":  "amadeus_points_of_interest",
+    "name":  "Amadeus Points of Interest API (incl. Events)",
+    "docs_url":  "https://developers.amadeus.com/references/points-of-interest-api#get-points-of-interest-by-area",
+    "api_base":  "https://test.api.amadeus.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/v1/reference-data/locations/pois"
+                      }
+                  ],
+    "keys_detected":  [
+                          "data[0].name",
+                          "data[0].startTime (If available)",
+                          "data[0].venueName (If available, otherwise parse name)",
+                          "data[0].geoCode.latitude / .longitude",
+                          "data[0].shortDescription (If available)"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "OAuth 2.0 Bearer Token (header: `Authorization: Bearer [TOKEN]`)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-28T21:08:56Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.amadeus.com/references/points-of-interest-api#get-points-of-interest-by-area",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  14498,
+                                                 "duration_ms":  549,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://test.api.amadeus.com/v1/reference-data/locations/pois",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/vnd.amadeus+json",
+                                                                "content_length_header":  "382",
+                                                                "raw_bytes":  382,
+                                                                "duration_ms":  179,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://test.api.amadeus.com/v1/reference-data/locations/pois",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://test.api.amadeus.com/v1/reference-data/locations/pois",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://test.api.amadeus.com/v1/reference-data/locations/pois",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/vnd.amadeus+json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  804,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:49:23Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developers.amadeus.com/references/points-of-interest-api#get-points-of-interest-by-area",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "14364",
+                                                 "raw_bytes":  14364,
+                                                 "duration_ms":  424,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://test.api.amadeus.com/v1/reference-data/locations/pois",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/vnd.amadeus+json",
+                                                                "content_length_header":  "382",
+                                                                "raw_bytes":  382,
+                                                                "duration_ms":  175,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://test.api.amadeus.com/v1/reference-data/locations/pois",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://test.api.amadeus.com/v1/reference-data/locations/pois",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://test.api.amadeus.com/v1/reference-data/locations/pois",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/vnd.amadeus+json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  769,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\events_v1\\nonrag\\gemini\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.64,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T21:59:49Z",
+                         "sdas":  0.363,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  false,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "401",
+    "best_probe_latency_ms":  175,
+    "best_probe_bytes":  true
+}

@@ -1,0 +1,525 @@
+﻿{
+    "service_id":  "adyen_payments",
+    "name":  "Adyen Payments API",
+    "docs_url":  "https://www.adyen.com/our-platform/online-payments",
+    "api_base":  "https://pal-test.adyen.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/v1/payments"
+                      }
+                  ],
+    "keys_detected":  [
+                          "pspReference",
+                          "resultCode"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API key in header",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-21T23:00:40Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.adyen.com/our-platform/online-payments",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  693,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "21743",
+                                                                "raw_bytes":  21743,
+                                                                "duration_ms":  318,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://pal-test.adyen.com/v1/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "21743",
+                                                                 "raw_bytes":  21743,
+                                                                 "duration_ms":  209,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T22:57:13Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.adyen.com/our-platform/online-payments",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  519,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "21743",
+                                                                "raw_bytes":  21743,
+                                                                "duration_ms":  302,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://pal-test.adyen.com/v1/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "21743",
+                                                                 "raw_bytes":  21743,
+                                                                 "duration_ms":  212,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:11:26Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.adyen.com/our-platform/online-payments",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  603,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "21743",
+                                                                "raw_bytes":  21743,
+                                                                "duration_ms":  322,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://pal-test.adyen.com/v1/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "21743",
+                                                                 "raw_bytes":  21743,
+                                                                 "duration_ms":  179,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:23:37Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.adyen.com/our-platform/online-payments",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  95,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "21743",
+                                                                "raw_bytes":  21743,
+                                                                "duration_ms":  293,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://pal-test.adyen.com/v1/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "21743",
+                                                                 "raw_bytes":  21743,
+                                                                 "duration_ms":  166,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T19:13:26Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.adyen.com/our-platform/online-payments",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  81,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "21743",
+                                                                "raw_bytes":  21743,
+                                                                "duration_ms":  295,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://pal-test.adyen.com/v1/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "21743",
+                                                                 "raw_bytes":  21743,
+                                                                 "duration_ms":  170,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T19:38:46Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.adyen.com/our-platform/online-payments",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  104,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "21743",
+                                                                "raw_bytes":  21743,
+                                                                "duration_ms":  301,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://pal-test.adyen.com/v1/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "21743",
+                                                                 "raw_bytes":  21743,
+                                                                 "duration_ms":  168,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:12:13Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.adyen.com/our-platform/online-payments",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  132,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "21743",
+                                                                "raw_bytes":  21743,
+                                                                "duration_ms":  315,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://pal-test.adyen.com/v1/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "21743",
+                                                                 "raw_bytes":  21743,
+                                                                 "duration_ms":  165,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:53:50Z",
+                              "docs_status":  "404",
+                              "docs_type":  "text/html;charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.adyen.com/our-platform/online-payments",
+                                                 "status":  "404",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=utf-8",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  513,
+                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                             },
+                              "docs_error":  "The remote server returned an error: (404) Not Found.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "21743",
+                                                                "raw_bytes":  21743,
+                                                                "duration_ms":  343,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://pal-test.adyen.com/v1/payments",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://pal-test.adyen.com/v1/payments",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "21743",
+                                                                 "raw_bytes":  21743,
+                                                                 "duration_ms":  196,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\payments_v1\\nonrag\\mistral\\v.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.6,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:53:56Z",
+                         "sdas":  0.345,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "404",
+    "best_probe_latency_ms":  293,
+    "best_probe_bytes":  true
+}

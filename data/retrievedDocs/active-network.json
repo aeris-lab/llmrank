@@ -1,0 +1,169 @@
+﻿{
+    "service_id":  "active-network",
+    "name":  "ACTIVE Network API",
+    "docs_url":  "https://developer.active.com/docs",
+    "api_base":  "https://api.amp.active.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/v2/search"
+                      }
+                  ],
+    "keys_detected":  [
+                          "results[0].assetName",
+                          "results[0].activityStartDate",
+                          "results[0].place.placeName",
+                          "results[0].place.addressLine1",
+                          "results[0].place.cityName",
+                          "results[0].assetDescriptions[0].description"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "api_key query parameter",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-28T21:06:21Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.active.com/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "20970",
+                                                 "raw_bytes":  20970,
+                                                 "duration_ms":  194,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.amp.active.com/v2/search",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/xml",
+                                                                "content_length_header":  "27",
+                                                                "raw_bytes":  27,
+                                                                "duration_ms":  98,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://api.amp.active.com/v2/search",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.amp.active.com/v2/search",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.amp.active.com/v2/search",
+                                                                 "status":  "596",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/xml",
+                                                                 "content_length_header":  "30",
+                                                                 "raw_bytes":  30,
+                                                                 "duration_ms":  319,
+                                                                 "error":  "The remote server returned an error: (596) 596."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:46:50Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.active.com/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "20970",
+                                                 "raw_bytes":  20970,
+                                                 "duration_ms":  231,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.amp.active.com/v2/search",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/xml",
+                                                                "content_length_header":  "27",
+                                                                "raw_bytes":  27,
+                                                                "duration_ms":  109,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://api.amp.active.com/v2/search",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.amp.active.com/v2/search",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.amp.active.com/v2/search",
+                                                                 "status":  "596",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/xml",
+                                                                 "content_length_header":  "30",
+                                                                 "raw_bytes":  30,
+                                                                 "duration_ms":  297,
+                                                                 "error":  "The remote server returned an error: (596) 596."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\events_v1\\nonrag\\claude\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.8,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T21:59:49Z",
+                         "sdas":  0.435,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "403",
+    "best_probe_latency_ms":  98,
+    "best_probe_bytes":  true
+}

@@ -1,0 +1,168 @@
+﻿{
+    "service_id":  "allevents_api_rapidapi",
+    "name":  "All Events API (RapidAPI)",
+    "docs_url":  "https://rapidapi.com/logicalgrow/api/allevents-api/",
+    "api_base":  "https://allevents-api.p.rapidapi.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/events/search"
+                      }
+                  ],
+    "keys_detected":  [
+                          "data[0].eventname",
+                          "data[0].start_time_display",
+                          "data[0].venue.name",
+                          "data[0].venue.latitude / .longitude",
+                          "data[0].description"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "RapidAPI Key (header `X-RapidAPI-Key`)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-28T21:08:57Z",
+                              "docs_status":  "308",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://rapidapi.com/logicalgrow/api/allevents-api/",
+                                                 "status":  "308",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  111,
+                                                 "error":  "The remote server returned an error: (308) Permanent Redirect."
+                                             },
+                              "docs_error":  "The remote server returned an error: (308) Permanent Redirect.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://allevents-api.p.rapidapi.com/events/search",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  38,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://allevents-api.p.rapidapi.com/events/search",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://allevents-api.p.rapidapi.com/events/search",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://allevents-api.p.rapidapi.com/events/search",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  336,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:49:24Z",
+                              "docs_status":  "308",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://rapidapi.com/logicalgrow/api/allevents-api/",
+                                                 "status":  "308",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  110,
+                                                 "error":  "The remote server returned an error: (308) Permanent Redirect."
+                                             },
+                              "docs_error":  "The remote server returned an error: (308) Permanent Redirect.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://allevents-api.p.rapidapi.com/events/search",
+                                                                "status":  "429",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "",
+                                                                "raw_bytes":  -1,
+                                                                "duration_ms":  54,
+                                                                "error":  "The remote server returned an error: (429) Too Many Requests."
+                                                            },
+                                                    "url":  "https://allevents-api.p.rapidapi.com/events/search",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://allevents-api.p.rapidapi.com/events/search",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://allevents-api.p.rapidapi.com/events/search",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  269,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\events_v1\\nonrag\\gemini\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.48,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T21:59:49Z",
+                         "sdas":  0.291,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  false,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "429",
+    "best_probe_latency_ms":  38,
+    "best_probe_bytes":  true
+}
