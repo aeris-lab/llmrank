@@ -1,0 +1,500 @@
+﻿{
+    "service_id":  "jambase__events",
+    "name":  "JamBase â€” Concerts API",
+    "docs_url":  "https://developer.jambase.com/",
+    "api_base":  "https://api.jambase.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}"
+                      }
+                  ],
+    "keys_detected":  [
+                          "events[0].name",
+                          "events[0].date",
+                          "events[0].venue.name",
+                          "events[0].venue.address",
+                          "events[0].artistInfo",
+                          "events[0].venue.location",
+                          "events[0].description"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API key via apikey= query parameter",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-26T20:08:53Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.jambase.com/",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  116637,
+                                                 "duration_ms":  1248,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                                "status":  "200",
+                                                                "redirected":  true,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  116637,
+                                                                "duration_ms":  1250,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                                 "status":  "200",
+                                                                 "redirected":  true,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  1246,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:05:13Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.jambase.com/",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  116637,
+                                                 "duration_ms":  2161,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                                "status":  "200",
+                                                                "redirected":  true,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  116637,
+                                                                "duration_ms":  1546,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                                 "status":  "200",
+                                                                 "redirected":  true,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  1491,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                                "status":  "200",
+                                                                "redirected":  true,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  116637,
+                                                                "duration_ms":  1275,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                                 "status":  "200",
+                                                                 "redirected":  true,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  1301,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:05:52Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.jambase.com/",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  116637,
+                                                 "duration_ms":  1667,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                                "status":  "200",
+                                                                "redirected":  true,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  116637,
+                                                                "duration_ms":  1404,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                                 "status":  "200",
+                                                                 "redirected":  true,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  1398,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                                "status":  "200",
+                                                                "redirected":  true,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  116637,
+                                                                "duration_ms":  1249,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                                 "status":  "200",
+                                                                 "redirected":  true,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  1525,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:45:46Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.jambase.com/",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  116637,
+                                                 "duration_ms":  2270,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                                "status":  "200",
+                                                                "redirected":  true,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  116637,
+                                                                "duration_ms":  1391,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                                 "status":  "200",
+                                                                 "redirected":  true,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  1329,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                                "status":  "200",
+                                                                "redirected":  true,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  116637,
+                                                                "duration_ms":  1258,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                                 "status":  "200",
+                                                                 "redirected":  true,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  1166,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T21:46:26Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.jambase.com/",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  116637,
+                                                 "duration_ms":  1501,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                                "status":  "200",
+                                                                "redirected":  true,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  116637,
+                                                                "duration_ms":  1518,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  3,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026artistName={q}\u0026zipCode={zip}\u0026radius={mi}\u0026startDate={yyyy-mm-dd}\u0026endDate={yyyy-mm-dd}",
+                                                                 "status":  "200",
+                                                                 "redirected":  true,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  1764,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                                "status":  "200",
+                                                                "redirected":  true,
+                                                                "content_type":  "text/html; charset=UTF-8",
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  116637,
+                                                                "duration_ms":  1279,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.jambase.com/events?apikey=YOUR_KEY\u0026lat={lat}\u0026lon={lon}\u0026radius={miles}\u0026page=1\u0026name={query}",
+                                                                 "status":  "200",
+                                                                 "redirected":  true,
+                                                                 "content_type":  "text/html; charset=UTF-8",
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  1437,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\events_v1\\nonrag\\gpt\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\events_v1\\nonrag\\gpt\\c.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.8,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T21:59:51Z",
+                         "sdas":  0.435,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  false,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "200",
+    "best_probe_latency_ms":  1249,
+    "best_probe_bytes":  true
+}

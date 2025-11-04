@@ -1,0 +1,348 @@
+﻿{
+    "service_id":  "iex-cloud",
+    "name":  "IEX Cloud Stock API",
+    "docs_url":  "https://iexcloud.io/docs/api/#quote",
+    "api_base":  "https://cloud.iexapis.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/stable/stock/{symbol}/quote"
+                      }
+                  ],
+    "keys_detected":  [
+                          "symbol",
+                          "latestPrice",
+                          "latestVolume",
+                          "latestUpdate",
+                          "iexRealtimePrice"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "token query parameter",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-24T23:04:31Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://iexcloud.io/docs/api/#quote",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  15006,
+                                                 "error":  "The operation has timed out."
+                                             },
+                              "docs_error":  "The operation has timed out.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  15003,
+                                                                "error":  "The operation has timed out."
+                                                            },
+                                                    "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  15003,
+                                                                 "error":  "The operation has timed out."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:19:19Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://iexcloud.io/docs/api/#quote",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  15014,
+                                                 "error":  "The operation has timed out."
+                                             },
+                              "docs_error":  "The operation has timed out.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  15006,
+                                                                "error":  "The operation has timed out."
+                                                            },
+                                                    "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  15016,
+                                                                 "error":  "The operation has timed out."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:30:55Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://iexcloud.io/docs/api/#quote",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  15011,
+                                                 "error":  "The operation has timed out."
+                                             },
+                              "docs_error":  "The operation has timed out.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  15005,
+                                                                "error":  "The operation has timed out."
+                                                            },
+                                                    "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  15014,
+                                                                 "error":  "The operation has timed out."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:24:12Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://iexcloud.io/docs/api/#quote",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  15017,
+                                                 "error":  "The operation has timed out."
+                                             },
+                              "docs_error":  "The operation has timed out.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  15013,
+                                                                "error":  "The operation has timed out."
+                                                            },
+                                                    "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  15016,
+                                                                 "error":  "The operation has timed out."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:07:13Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://iexcloud.io/docs/api/#quote",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  15011,
+                                                 "error":  "The operation has timed out."
+                                             },
+                              "docs_error":  "The operation has timed out.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  15018,
+                                                                "error":  "The operation has timed out."
+                                                            },
+                                                    "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://cloud.iexapis.com/stable/stock/{symbol}/quote",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  15004,
+                                                                 "error":  "The operation has timed out."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\realtimestock_v1\\nonrag\\claude\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:22:16Z",
+                         "sdas":  0.075,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  false,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "ERR",
+    "best_probe_latency_ms":  0,
+    "best_probe_bytes":  false
+}

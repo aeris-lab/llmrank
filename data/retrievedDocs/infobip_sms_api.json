@@ -1,0 +1,950 @@
+﻿{
+    "service_id":  "infobip_sms_api",
+    "name":  "Infobip SMS API",
+    "docs_url":  "https://www.infobip.com/docs/api/channels/sms",
+    "api_base":  "https://{base-url}/sms/2",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/text/single"
+                      }
+                  ],
+    "keys_detected":  [
+                          "messages",
+                          "messageId",
+                          "status",
+                          "to",
+                          "smsCount",
+                          "groupId",
+                          "groupName"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API Key (Authorization header)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-24T17:46:58Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/channels/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  258,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base-url}/sms/2/text/single",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base-url}/sms/2/text/single",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T17:59:01Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/channels/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  268,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base-url}/sms/2/text/single",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base-url}/sms/2/text/single",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:22:35Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/channels/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  267,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base-url}/sms/2/text/single",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base-url}/sms/2/text/single",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:24:24Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/channels/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  264,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base-url}/sms/2/text/single",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base-url}/sms/2/text/single",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:31:03Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/channels/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  227,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base-url}/sms/2/text/single",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base-url}/sms/2/text/single",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:37:50Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/channels/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  363,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base-url}/sms/2/text/single",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base-url}/sms/2/text/single",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  2,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:14:00Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/channels/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  212,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  3,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base-url}/sms/2/text/single",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base-url}/sms/2/text/single",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:26:13Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/channels/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  235,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base-url}/sms/2/text/single",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base-url}/sms/2/text/single",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:32:14Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/channels/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  251,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base-url}/sms/2/text/single",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base-url}/sms/2/text/single",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:42:29Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/channels/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  222,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base-url}/sms/2/text/single",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base-url}/sms/2/text/single",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T23:26:21Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/channels/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  210,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base-url}/sms/2/text/single",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  4,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base-url}/sms/2/text/single",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:41:31Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/channels/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  216,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base-url}/sms/2/text/single",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  2,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base-url}/sms/2/text/single",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:52:29Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/channels/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  230,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base-url}/sms/2/text/single",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base-url}/sms/2/text/single",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:45:59Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/channels/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  252,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base-url}/sms/2/text/single",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base-url}/sms/2/text/single",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:30:29Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/channels/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  230,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base-url}/sms/2/text/single",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base-url}/sms/2/text/single",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base-url}/sms/2/text/single",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base-url}/sms/2/text/single\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\sms_v1\\nonrag\\deepseek\\v.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:32:18Z",
+                         "sdas":  0.075,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "ERR",
+    "best_probe_latency_ms":  0,
+    "best_probe_bytes":  false
+}

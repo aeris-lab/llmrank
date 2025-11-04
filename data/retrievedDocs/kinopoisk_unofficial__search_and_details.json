@@ -1,0 +1,245 @@
+﻿{
+    "service_id":  "kinopoisk_unofficial__search_and_details",
+    "name":  "Kinopoisk Unofficial API â€” Search \u0026 Details",
+    "docs_url":  "https://kinopoiskapiunofficial.tech/documentation",
+    "api_base":  "https://kinopoiskapiunofficial.tech",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/api/v2.2/films?keyword={query}"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/api/v2.2/films/{id}"
+                      }
+                  ],
+    "keys_detected":  [
+                          "nameOriginal",
+                          "year",
+                          "description",
+                          "ratingKinopoisk",
+                          "persons[?profession==\u0027DIRECTOR\u0027].name"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "X-API-KEY header",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-26T20:46:07Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://kinopoiskapiunofficial.tech/documentation",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "2929",
+                                                 "raw_bytes":  2929,
+                                                 "duration_ms":  1076,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films?keyword={query}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "81",
+                                                                "raw_bytes":  81,
+                                                                "duration_ms":  201,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films?keyword={query}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films?keyword={query}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films?keyword={query}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "81",
+                                                                 "raw_bytes":  81,
+                                                                 "duration_ms":  231,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films/{id}",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html;charset=utf-8",
+                                                                "content_length_header":  "455",
+                                                                "raw_bytes":  455,
+                                                                "duration_ms":  211,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films/{id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films/{id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films/{id}",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html;charset=utf-8",
+                                                                 "content_length_header":  "455",
+                                                                 "raw_bytes":  455,
+                                                                 "duration_ms":  209,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:26:53Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://kinopoiskapiunofficial.tech/documentation",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "2929",
+                                                 "raw_bytes":  2929,
+                                                 "duration_ms":  1196,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films?keyword={query}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "81",
+                                                                "raw_bytes":  81,
+                                                                "duration_ms":  202,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films?keyword={query}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films?keyword={query}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films?keyword={query}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "81",
+                                                                 "raw_bytes":  81,
+                                                                 "duration_ms":  212,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films/{id}",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html;charset=utf-8",
+                                                                "content_length_header":  "455",
+                                                                "raw_bytes":  455,
+                                                                "duration_ms":  202,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films/{id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films/{id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://kinopoiskapiunofficial.tech/api/v2.2/films/{id}",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html;charset=utf-8",
+                                                                 "content_length_header":  "455",
+                                                                 "raw_bytes":  455,
+                                                                 "duration_ms":  207,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "c"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\movie_v1\\nonrag\\gpt\\c.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.64,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:41:29Z",
+                         "sdas":  0.363,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  false,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "401",
+    "best_probe_latency_ms":  201,
+    "best_probe_bytes":  true
+}

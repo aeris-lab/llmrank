@@ -1,0 +1,187 @@
+﻿{
+    "service_id":  "lastfm__search_api",
+    "name":  "Last.fm API Search",
+    "docs_url":  "https://www.last.fm/api/show/track.search",
+    "api_base":  "https://ws.audioscrobbler.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/2.0/?method=track.search\u0026track={query}\u0026api_key={key}\u0026format=json"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/2.0/?method=artist.search\u0026artist={query}\u0026api_key={key}\u0026format=json"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/2.0/?method=album.search\u0026album={query}\u0026api_key={key}\u0026format=json"
+                      }
+                  ],
+    "keys_detected":  [
+                          "results.trackmatches.track[].name",
+                          "results.trackmatches.track[].artist"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API key via api_key query parameter",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-28T22:42:59Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.last.fm/api/show/track.search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "129401",
+                                                 "raw_bytes":  129401,
+                                                 "duration_ms":  195,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/?method=track.search\u0026track={query}\u0026api_key={key}\u0026format=json",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "85",
+                                                                "raw_bytes":  85,
+                                                                "duration_ms":  138,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/?method=track.search\u0026track={query}\u0026api_key={key}\u0026format=json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/?method=track.search\u0026track={query}\u0026api_key={key}\u0026format=json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/?method=track.search\u0026track={query}\u0026api_key={key}\u0026format=json",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "85",
+                                                                 "raw_bytes":  85,
+                                                                 "duration_ms":  476,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/?method=artist.search\u0026artist={query}\u0026api_key={key}\u0026format=json",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "85",
+                                                                "raw_bytes":  85,
+                                                                "duration_ms":  135,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/?method=artist.search\u0026artist={query}\u0026api_key={key}\u0026format=json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/?method=artist.search\u0026artist={query}\u0026api_key={key}\u0026format=json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/?method=artist.search\u0026artist={query}\u0026api_key={key}\u0026format=json",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "85",
+                                                                 "raw_bytes":  85,
+                                                                 "duration_ms":  150,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/?method=album.search\u0026album={query}\u0026api_key={key}\u0026format=json",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "85",
+                                                                "raw_bytes":  85,
+                                                                "duration_ms":  157,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/?method=album.search\u0026album={query}\u0026api_key={key}\u0026format=json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/?method=album.search\u0026album={query}\u0026api_key={key}\u0026format=json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/?method=album.search\u0026album={query}\u0026api_key={key}\u0026format=json",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "85",
+                                                                 "raw_bytes":  85,
+                                                                 "duration_ms":  187,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\music_v1\\nonrag\\claude\\v.json"
+                ],
+    "best_probe_status":  "403",
+    "best_probe_latency_ms":  135,
+    "best_probe_bytes":  true,
+    "solar_scores":  {
+                         "ifs":  0.25,
+                         "support_verified":  false,
+                         "fca":  0.8,
+                         "error_handling_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:47:06Z",
+                         "sdas":  0.435,
+                         "pricing_verified":  true,
+                         "constraints_verified":  false,
+                         "code_samples_verified":  false,
+                         "ssi":  0,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true
+                     }
+}

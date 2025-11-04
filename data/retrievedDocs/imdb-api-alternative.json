@@ -1,0 +1,162 @@
+﻿{
+    "service_id":  "imdb-api-alternative",
+    "name":  "IMDB API Alternative",
+    "docs_url":  "https://developer.imdb.com/documentation/api-documentation/sample-queries/search",
+    "api_base":  "https://imdb-api.com/en/API",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/SearchMovie/[yourkey]/[search_term]"
+                      }
+                  ],
+    "keys_detected":  "{\"results\": [{\"id\": \"tt0099685\", \"title\": \"Goodfellas\", \"year\": \"1990\", \"director\": \"Martin Scorsese\", \"plot\": \"The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito.\", \"rating\": 8.7}]}",
+    "evidence_snippet":  null,
+    "auth_hint":  "API key",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-26T21:00:28Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.imdb.com/documentation/api-documentation/sample-queries/search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "60751",
+                                                 "raw_bytes":  60751,
+                                                 "duration_ms":  49,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://imdb-api.com/en/API/SearchMovie/[yourkey]/[search_term]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  7,
+                                                                "error":  "The remote name could not be resolved: \u0027imdb-api.com\u0027"
+                                                            },
+                                                    "url":  "https://imdb-api.com/en/API/SearchMovie/[yourkey]/[search_term]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://imdb-api.com/en/API/SearchMovie/[yourkey]/[search_term]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://imdb-api.com/en/API/SearchMovie/[yourkey]/[search_term]",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  189,
+                                                                 "error":  "The remote name could not be resolved: \u0027imdb-api.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:41:11Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.imdb.com/documentation/api-documentation/sample-queries/search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  "60751",
+                                                 "raw_bytes":  60751,
+                                                 "duration_ms":  76,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://imdb-api.com/en/API/SearchMovie/[yourkey]/[search_term]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  4,
+                                                                "error":  "The remote name could not be resolved: \u0027imdb-api.com\u0027"
+                                                            },
+                                                    "url":  "https://imdb-api.com/en/API/SearchMovie/[yourkey]/[search_term]",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://imdb-api.com/en/API/SearchMovie/[yourkey]/[search_term]",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://imdb-api.com/en/API/SearchMovie/[yourkey]/[search_term]",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  72,
+                                                                 "error":  "The remote name could not be resolved: \u0027imdb-api.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\movie_v1\\nonrag\\mistral\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:41:29Z",
+                         "sdas":  0.075,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "ERR",
+    "best_probe_latency_ms":  0,
+    "best_probe_bytes":  false
+}

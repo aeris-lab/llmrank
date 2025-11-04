@@ -1,0 +1,72 @@
+﻿{
+    "service_id":  "lastfm__search",
+    "name":  "Last.fm API",
+    "docs_url":  "https://www.last.fm/api",
+    "api_base":  "https://ws.audioscrobbler.com/2.0",
+    "endpoints":  [
+
+                  ],
+    "keys_detected":  [
+                          "results",
+                          "trackmatches",
+                          "track",
+                          "name",
+                          "artist",
+                          "album",
+                          "releasedate",
+                          "toptags"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API Key (query parameter)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-28T22:46:30Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.last.fm/api",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "120617",
+                                                 "raw_bytes":  120617,
+                                                 "duration_ms":  245,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\music_v1\\nonrag\\mistral\\c.json"
+                ],
+    "best_probe_status":  null,
+    "best_probe_latency_ms":  null,
+    "best_probe_bytes":  0,
+    "solar_scores":  {
+                         "ifs":  0.25,
+                         "support_verified":  false,
+                         "fca":  0,
+                         "error_handling_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:47:06Z",
+                         "sdas":  0.075,
+                         "pricing_verified":  true,
+                         "constraints_verified":  false,
+                         "code_samples_verified":  false,
+                         "ssi":  0,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true
+                     }
+}

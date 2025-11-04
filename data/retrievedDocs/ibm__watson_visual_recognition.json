@@ -1,0 +1,1266 @@
+﻿{
+    "service_id":  "ibm__watson_visual_recognition",
+    "name":  "IBM Watson Visual Recognition",
+    "docs_url":  "https://cloud.ibm.com/apidocs/visual-recognition",
+    "api_base":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/v4/visual_recognition/classify"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/analyze"
+                      }
+                  ],
+    "keys_detected":  [
+                          "class",
+                          "score",
+                          "images",
+                          "objects",
+                          "object"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API key in header",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-21T18:59:17Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.ibm.com/apidocs/visual-recognition",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  1872085,
+                                                 "duration_ms":  895,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  23,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T22:42:24Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.ibm.com/apidocs/visual-recognition/visual-recognition-v4",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  1872085,
+                                                 "duration_ms":  1191,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  35,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T22:43:05Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.ibm.com/apidocs/visual-recognition",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  1872085,
+                                                 "duration_ms":  816,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  39,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T22:51:55Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.ibm.com/apidocs/visual-recognition/visual-recognition-v4",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  1872085,
+                                                 "duration_ms":  1215,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  52,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T22:52:32Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.ibm.com/apidocs/visual-recognition",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  1872085,
+                                                 "duration_ms":  963,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  64,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T23:16:36Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.ibm.com/apidocs/visual-recognition/visual-recognition-v4",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  1872085,
+                                                 "duration_ms":  1486,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  4,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  54,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T23:17:13Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.ibm.com/apidocs/visual-recognition",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  1872085,
+                                                 "duration_ms":  888,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  39,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-22T02:14:34Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.ibm.com/apidocs/visual-recognition/visual-recognition-v4",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  1872077,
+                                                 "duration_ms":  1233,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  39,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-22T02:15:12Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.ibm.com/apidocs/visual-recognition",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  1872077,
+                                                 "duration_ms":  915,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  30,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T20:44:55Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.ibm.com/apidocs/visual-recognition/visual-recognition-v4",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  1872074,
+                                                 "duration_ms":  1236,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  8,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  60,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  2,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  2,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T20:45:36Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.ibm.com/apidocs/visual-recognition",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  1872074,
+                                                 "duration_ms":  836,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  3,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  51,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  3,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  3,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:25:31Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.ibm.com/apidocs/visual-recognition/visual-recognition-v4",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  1872081,
+                                                 "duration_ms":  1161,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  2,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/v4/visual_recognition/classify",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  57,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  2,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/analyze",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  2,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:26:13Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://cloud.ibm.com/apidocs/visual-recognition",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  1872081,
+                                                 "duration_ms":  779,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  2,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/v4/visual_recognition/classify",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  32,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                            },
+                                                    "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.us-south.visual-recognition.watson.cloud.ibm.com/analyze",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "The remote name could not be resolved: \u0027api.us-south.visual-recognition.watson.cloud.ibm.com\u0027"
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\imageclassification_v1\\nonrag\\mistral\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\imageclassification_v1\\nonrag\\mistral\\c.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:26:24Z",
+                         "sdas":  0.075,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "ERR",
+    "best_probe_latency_ms":  0,
+    "best_probe_bytes":  false
+}

@@ -1,0 +1,1421 @@
+﻿{
+    "service_id":  "lastfm__track_search",
+    "name":  "Last.fm API Track Search",
+    "docs_url":  "https://www.last.fm/api/show/track.search",
+    "api_base":  "https://ws.audioscrobbler.com/2.0/",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/2.0/"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json"
+                      }
+                  ],
+    "keys_detected":  [
+                          "results",
+                          "trackmatches",
+                          "track",
+                          "name",
+                          "artist",
+                          "listeners",
+                          "results.trackmatches.track[].name",
+                          "results.trackmatches.track[].artist",
+                          "results.trackmatches.track[].album",
+                          "track.name",
+                          "track.artist.name",
+                          "track.album.title",
+                          "track.wiki.published",
+                          "track.toptags.tag[].name"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API key via query parameter",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-26T21:01:51Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.last.fm/api/show/track.search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "129401",
+                                                 "raw_bytes":  129401,
+                                                 "duration_ms":  231,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/xml; charset=UTF-8",
+                                                                "content_length_header":  "160",
+                                                                "raw_bytes":  160,
+                                                                "duration_ms":  75,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/xml; charset=UTF-8",
+                                                                 "content_length_header":  "160",
+                                                                 "raw_bytes":  160,
+                                                                 "duration_ms":  110,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:02:28Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.last.fm/api/show/track.search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "129401",
+                                                 "raw_bytes":  129401,
+                                                 "duration_ms":  230,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/xml; charset=UTF-8",
+                                                                "content_length_header":  "160",
+                                                                "raw_bytes":  160,
+                                                                "duration_ms":  72,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/xml; charset=UTF-8",
+                                                                 "content_length_header":  "160",
+                                                                 "raw_bytes":  160,
+                                                                 "duration_ms":  143,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:04:21Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.last.fm/api/show/track.search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "129401",
+                                                 "raw_bytes":  129401,
+                                                 "duration_ms":  268,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/xml; charset=UTF-8",
+                                                                "content_length_header":  "160",
+                                                                "raw_bytes":  160,
+                                                                "duration_ms":  107,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/xml; charset=UTF-8",
+                                                                 "content_length_header":  "160",
+                                                                 "raw_bytes":  160,
+                                                                 "duration_ms":  117,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:04:56Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.last.fm/api/show/track.search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "129401",
+                                                 "raw_bytes":  129401,
+                                                 "duration_ms":  384,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/xml; charset=UTF-8",
+                                                                "content_length_header":  "160",
+                                                                "raw_bytes":  160,
+                                                                "duration_ms":  73,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/xml; charset=UTF-8",
+                                                                 "content_length_header":  "160",
+                                                                 "raw_bytes":  160,
+                                                                 "duration_ms":  73,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:05:17Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.last.fm/api/show/track.search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "129401",
+                                                 "raw_bytes":  129401,
+                                                 "duration_ms":  266,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/2.0/",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "175",
+                                                                "raw_bytes":  175,
+                                                                "duration_ms":  69,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/2.0/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/2.0/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/2.0/",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "175",
+                                                                 "raw_bytes":  175,
+                                                                 "duration_ms":  70,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/xml; charset=UTF-8",
+                                                                "content_length_header":  "160",
+                                                                "raw_bytes":  160,
+                                                                "duration_ms":  68,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/xml; charset=UTF-8",
+                                                                 "content_length_header":  "160",
+                                                                 "raw_bytes":  160,
+                                                                 "duration_ms":  72,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:42:25Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.last.fm/api",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "120617",
+                                                 "raw_bytes":  120617,
+                                                 "duration_ms":  222,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/2.0/",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "175",
+                                                                "raw_bytes":  175,
+                                                                "duration_ms":  62,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/2.0/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/2.0/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/2.0/",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "175",
+                                                                 "raw_bytes":  175,
+                                                                 "duration_ms":  154,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/xml; charset=UTF-8",
+                                                                "content_length_header":  "160",
+                                                                "raw_bytes":  160,
+                                                                "duration_ms":  64,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/xml; charset=UTF-8",
+                                                                 "content_length_header":  "160",
+                                                                 "raw_bytes":  160,
+                                                                 "duration_ms":  70,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "85",
+                                                                "raw_bytes":  85,
+                                                                "duration_ms":  159,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "85",
+                                                                 "raw_bytes":  85,
+                                                                 "duration_ms":  69,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "85",
+                                                                "raw_bytes":  85,
+                                                                "duration_ms":  141,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "85",
+                                                                 "raw_bytes":  85,
+                                                                 "duration_ms":  120,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:42:35Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.last.fm/api/show/track.search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "129402",
+                                                 "raw_bytes":  129402,
+                                                 "duration_ms":  307,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/xml; charset=UTF-8",
+                                                                "content_length_header":  "160",
+                                                                "raw_bytes":  160,
+                                                                "duration_ms":  81,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/xml; charset=UTF-8",
+                                                                 "content_length_header":  "160",
+                                                                 "raw_bytes":  160,
+                                                                 "duration_ms":  141,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "151",
+                                                                "raw_bytes":  151,
+                                                                "duration_ms":  71,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "151",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  67,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "151",
+                                                                "raw_bytes":  151,
+                                                                "duration_ms":  78,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "151",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  106,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "151",
+                                                                "raw_bytes":  151,
+                                                                "duration_ms":  67,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "151",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  61,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "claude",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:43:17Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.last.fm/api/show/track.search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "129402",
+                                                 "raw_bytes":  129402,
+                                                 "duration_ms":  685,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/xml; charset=UTF-8",
+                                                                "content_length_header":  "160",
+                                                                "raw_bytes":  160,
+                                                                "duration_ms":  71,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/xml; charset=UTF-8",
+                                                                 "content_length_header":  "160",
+                                                                 "raw_bytes":  160,
+                                                                 "duration_ms":  166,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "151",
+                                                                "raw_bytes":  151,
+                                                                "duration_ms":  59,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "151",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  60,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "151",
+                                                                "raw_bytes":  151,
+                                                                "duration_ms":  61,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "151",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  61,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "151",
+                                                                "raw_bytes":  151,
+                                                                "duration_ms":  62,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "151",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  67,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:45:14Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.last.fm/api/show/track.search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "129401",
+                                                 "raw_bytes":  129401,
+                                                 "duration_ms":  333,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/xml; charset=UTF-8",
+                                                                "content_length_header":  "160",
+                                                                "raw_bytes":  160,
+                                                                "duration_ms":  61,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/xml; charset=UTF-8",
+                                                                 "content_length_header":  "160",
+                                                                 "raw_bytes":  160,
+                                                                 "duration_ms":  68,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "151",
+                                                                "raw_bytes":  151,
+                                                                "duration_ms":  59,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "151",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  88,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "151",
+                                                                "raw_bytes":  151,
+                                                                "duration_ms":  58,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "151",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  58,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "151",
+                                                                "raw_bytes":  151,
+                                                                "duration_ms":  64,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "151",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  59,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:45:49Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.last.fm/api/show/track.search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "129401",
+                                                 "raw_bytes":  129401,
+                                                 "duration_ms":  200,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/xml; charset=UTF-8",
+                                                                "content_length_header":  "160",
+                                                                "raw_bytes":  160,
+                                                                "duration_ms":  88,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/xml; charset=UTF-8",
+                                                                 "content_length_header":  "160",
+                                                                 "raw_bytes":  160,
+                                                                 "duration_ms":  71,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "151",
+                                                                "raw_bytes":  151,
+                                                                "duration_ms":  96,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "151",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  109,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "151",
+                                                                "raw_bytes":  151,
+                                                                "duration_ms":  64,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "151",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  77,
+                                                                 "error":  null
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "200",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "151",
+                                                                "raw_bytes":  151,
+                                                                "duration_ms":  65,
+                                                                "error":  null
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                 "status":  "200",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "151",
+                                                                 "raw_bytes":  0,
+                                                                 "duration_ms":  74,
+                                                                 "error":  null
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "c.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "c"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:46:15Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.last.fm/api/show/track.search",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "129401",
+                                                 "raw_bytes":  129401,
+                                                 "duration_ms":  206,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/2.0/",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html",
+                                                                "content_length_header":  "175",
+                                                                "raw_bytes":  175,
+                                                                "duration_ms":  64,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/2.0/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/2.0/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/2.0/",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html",
+                                                                 "content_length_header":  "175",
+                                                                 "raw_bytes":  175,
+                                                                 "duration_ms":  96,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "400",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/xml; charset=UTF-8",
+                                                                "content_length_header":  "160",
+                                                                "raw_bytes":  160,
+                                                                "duration_ms":  59,
+                                                                "error":  "The remote server returned an error: (400) Bad Request."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/",
+                                                                 "status":  "400",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/xml; charset=UTF-8",
+                                                                 "content_length_header":  "160",
+                                                                 "raw_bytes":  160,
+                                                                 "duration_ms":  95,
+                                                                 "error":  "The remote server returned an error: (400) Bad Request."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "85",
+                                                                "raw_bytes":  85,
+                                                                "duration_ms":  233,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/?method=track.search\u0026track={query}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "85",
+                                                                 "raw_bytes":  85,
+                                                                 "duration_ms":  72,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "403",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json",
+                                                                "content_length_header":  "85",
+                                                                "raw_bytes":  85,
+                                                                "duration_ms":  126,
+                                                                "error":  "The remote server returned an error: (403) Forbidden."
+                                                            },
+                                                    "url":  "https://ws.audioscrobbler.com/2.0/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://ws.audioscrobbler.com/2.0/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://ws.audioscrobbler.com/2.0/?method=track.getInfo\u0026mbid={mbid}\u0026api_key=YOUR_KEY\u0026format=json",
+                                                                 "status":  "403",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json",
+                                                                 "content_length_header":  "85",
+                                                                 "raw_bytes":  85,
+                                                                 "duration_ms":  122,
+                                                                 "error":  "The remote server returned an error: (403) Forbidden."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "deepseek",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\music_v1\\nonrag\\claude\\c.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\music_v1\\nonrag\\gemini\\c.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\music_v1\\nonrag\\gemini\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\music_v1\\nonrag\\deepseek\\c.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\music_v1\\nonrag\\deepseek\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\music_v1\\nonrag\\gpt\\v.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  1,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:47:06Z",
+                         "sdas":  0.525,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "200",
+    "best_probe_latency_ms":  58,
+    "best_probe_bytes":  true
+}

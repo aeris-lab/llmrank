@@ -1,0 +1,1263 @@
+﻿{
+    "service_id":  "huggingface__inference_image",
+    "name":  "Hugging Face â€” Inference API (image-classification/object-detection)",
+    "docs_url":  "https://huggingface.co/docs/api-inference/index",
+    "api_base":  "https://api-inference.huggingface.co",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/models/google/vit-base-patch16-224"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/models/{model_id}"
+                      }
+                  ],
+    "keys_detected":  [
+                          "[0].label",
+                          "[0].score"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "Bearer token (Hugging Face API token) in Authorization header",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-21T18:58:23Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://huggingface.co/docs/api-inference/index",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "136823",
+                                                 "raw_bytes":  136823,
+                                                 "duration_ms":  262,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "22382",
+                                                                "raw_bytes":  22382,
+                                                                "duration_ms":  106,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "22382",
+                                                                 "raw_bytes":  22382,
+                                                                 "duration_ms":  96,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T22:42:06Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "[https://huggingface.co/docs/api-inference/detailed_parameters#image-classification](https://huggingface.co/docs/api-inference/detailed_parameters#image-classification)",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1,
+                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                             },
+                              "docs_error":  "Invalid URI: The hostname could not be parsed.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Invalid URI: The hostname could not be parsed."
+                                                            },
+                                                    "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Invalid URI: The hostname could not be parsed."
+                                                            },
+                                                    "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T22:42:14Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://huggingface.co/docs/api-inference/index",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "136823",
+                                                 "raw_bytes":  136823,
+                                                 "duration_ms":  205,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "22382",
+                                                                "raw_bytes":  22382,
+                                                                "duration_ms":  113,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "22382",
+                                                                 "raw_bytes":  22382,
+                                                                 "duration_ms":  94,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "22356",
+                                                                "raw_bytes":  22356,
+                                                                "duration_ms":  128,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "22356",
+                                                                 "raw_bytes":  22356,
+                                                                 "duration_ms":  128,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T22:51:36Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "[https://huggingface.co/docs/api-inference/detailed_parameters#image-classification](https://huggingface.co/docs/api-inference/detailed_parameters#image-classification)",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1,
+                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                             },
+                              "docs_error":  "Invalid URI: The hostname could not be parsed.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Invalid URI: The hostname could not be parsed."
+                                                            },
+                                                    "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Invalid URI: The hostname could not be parsed."
+                                                            },
+                                                    "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T22:51:43Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://huggingface.co/docs/api-inference/index",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "136823",
+                                                 "raw_bytes":  136823,
+                                                 "duration_ms":  208,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "22382",
+                                                                "raw_bytes":  22382,
+                                                                "duration_ms":  106,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "22382",
+                                                                 "raw_bytes":  22382,
+                                                                 "duration_ms":  92,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "22356",
+                                                                "raw_bytes":  22356,
+                                                                "duration_ms":  112,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "22356",
+                                                                 "raw_bytes":  22356,
+                                                                 "duration_ms":  132,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T23:16:15Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "[https://huggingface.co/docs/api-inference/detailed_parameters#image-classification](https://huggingface.co/docs/api-inference/detailed_parameters#image-classification)",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1,
+                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                             },
+                              "docs_error":  "Invalid URI: The hostname could not be parsed.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Invalid URI: The hostname could not be parsed."
+                                                            },
+                                                    "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Invalid URI: The hostname could not be parsed."
+                                                            },
+                                                    "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-21T23:16:24Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://huggingface.co/docs/api-inference/index",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "136823",
+                                                 "raw_bytes":  136823,
+                                                 "duration_ms":  223,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "22382",
+                                                                "raw_bytes":  22382,
+                                                                "duration_ms":  110,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "22382",
+                                                                 "raw_bytes":  22382,
+                                                                 "duration_ms":  103,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "22356",
+                                                                "raw_bytes":  22356,
+                                                                "duration_ms":  128,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "22356",
+                                                                 "raw_bytes":  22356,
+                                                                 "duration_ms":  95,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-22T02:14:15Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "[https://huggingface.co/docs/api-inference/detailed_parameters#image-classification](https://huggingface.co/docs/api-inference/detailed_parameters#image-classification)",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1,
+                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                             },
+                              "docs_error":  "Invalid URI: The hostname could not be parsed.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Invalid URI: The hostname could not be parsed."
+                                                            },
+                                                    "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Invalid URI: The hostname could not be parsed."
+                                                            },
+                                                    "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-22T02:14:24Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://huggingface.co/docs/api-inference/index",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "136823",
+                                                 "raw_bytes":  136823,
+                                                 "duration_ms":  278,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "22382",
+                                                                "raw_bytes":  22382,
+                                                                "duration_ms":  151,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "22382",
+                                                                 "raw_bytes":  22382,
+                                                                 "duration_ms":  113,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "22356",
+                                                                "raw_bytes":  22356,
+                                                                "duration_ms":  108,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "22356",
+                                                                 "raw_bytes":  22356,
+                                                                 "duration_ms":  136,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T20:42:44Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "[https://huggingface.co/docs/api-inference/detailed_parameters#image-classification](https://huggingface.co/docs/api-inference/detailed_parameters#image-classification)",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1,
+                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                             },
+                              "docs_error":  "Invalid URI: The hostname could not be parsed.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Invalid URI: The hostname could not be parsed."
+                                                            },
+                                                    "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Invalid URI: The hostname could not be parsed."
+                                                            },
+                                                    "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T20:42:51Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://huggingface.co/docs/api-inference/index",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "136848",
+                                                 "raw_bytes":  136848,
+                                                 "duration_ms":  218,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "22407",
+                                                                "raw_bytes":  22407,
+                                                                "duration_ms":  106,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "22407",
+                                                                 "raw_bytes":  22407,
+                                                                 "duration_ms":  91,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "22381",
+                                                                "raw_bytes":  22381,
+                                                                "duration_ms":  100,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "22381",
+                                                                 "raw_bytes":  22381,
+                                                                 "duration_ms":  97,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:22:58Z",
+                              "docs_status":  "ERR",
+                              "docs_type":  null,
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "[https://huggingface.co/docs/api-inference/detailed_parameters#image-classification](https://huggingface.co/docs/api-inference/detailed_parameters#image-classification)",
+                                                 "status":  "ERR",
+                                                 "redirected":  false,
+                                                 "content_type":  null,
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  null,
+                                                 "duration_ms":  1,
+                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                             },
+                              "docs_error":  "Invalid URI: The hostname could not be parsed.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Invalid URI: The hostname could not be parsed."
+                                                            },
+                                                    "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/google/vit-base-patch16-224",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Invalid URI: The hostname could not be parsed."
+                                                            },
+                                                    "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "[https://api-inference.huggingface.co](https://api-inference.huggingface.co)/models/{model_id}",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Invalid URI: The hostname could not be parsed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T22:23:07Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://huggingface.co/docs/api-inference/index",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  "136849",
+                                                 "raw_bytes":  136849,
+                                                 "duration_ms":  220,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "22407",
+                                                                "raw_bytes":  22407,
+                                                                "duration_ms":  161,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "22407",
+                                                                 "raw_bytes":  22407,
+                                                                 "duration_ms":  100,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "22381",
+                                                                "raw_bytes":  22381,
+                                                                "duration_ms":  109,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api-inference.huggingface.co/models/{model_id}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "22381",
+                                                                 "raw_bytes":  22381,
+                                                                 "duration_ms":  134,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\imageclassification_v1\\nonrag\\gpt\\v.json",
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\imageclassification_v1\\nonrag\\gpt\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.8,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:26:24Z",
+                         "sdas":  0.435,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "401",
+    "best_probe_latency_ms":  100,
+    "best_probe_bytes":  true
+}

@@ -1,0 +1,946 @@
+﻿{
+    "service_id":  "infobip",
+    "name":  "Infobip SMS API",
+    "docs_url":  "https://www.infobip.com/docs/api/platform/sms",
+    "api_base":  "https://{base_url}.api.infobip.com/sms/2",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/text/advanced"
+                      }
+                  ],
+    "keys_detected":  [
+                          "bulkId",
+                          "messages[0].messageId",
+                          "messages[0].status.groupName"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "Bearer Token (API Key) or Basic Auth in the Authorization header.",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-24T17:47:20Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/platform/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  238,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T17:59:18Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/platform/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  286,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:22:53Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/platform/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  300,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:24:43Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/platform/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  348,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:31:22Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/platform/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  267,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  4,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:38:06Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/platform/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  262,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:14:17Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/platform/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  294,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:26:28Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/platform/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  234,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:32:29Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/platform/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  255,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:42:46Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/platform/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  288,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  0,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T23:25:37Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/platform/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  198,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:40:51Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/platform/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  249,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:51:48Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/platform/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  242,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:44:49Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/platform/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  235,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:29:46Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.infobip.com/docs/api/platform/sms",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  37315,
+                                                 "duration_ms":  236,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://{base_url}.api.infobip.com/sms/2/text/advanced",
+                                                                 "status":  "ERR",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  null,
+                                                                 "raw_bytes":  null,
+                                                                 "duration_ms":  1,
+                                                                 "error":  "Cannot bind parameter \u0027Uri\u0027. Cannot convert value \"https://{base_url}.api.infobip.com/sms/2/text/advanced\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\""
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\sms_v1\\nonrag\\gemini\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:32:18Z",
+                         "sdas":  0.075,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "ERR",
+    "best_probe_latency_ms":  0,
+    "best_probe_bytes":  false
+}

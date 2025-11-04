@@ -1,0 +1,148 @@
+﻿{
+    "service_id":  "humanapi__platform",
+    "name":  "Human API â€” Consumer Health Data Platform",
+    "docs_url":  "https://reference.humanapi.co/reference",
+    "api_base":  "https://api.humanapi.co/v1",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/human/activities?start_date={yyyy-mm-dd}\u0026end_date={yyyy-mm-dd}"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/human/physiology/heart_rate?start_time={iso}\u0026end_time={iso}"
+                      }
+                  ],
+    "keys_detected":  [
+                          "[0].value",
+                          "[0].unit",
+                          "[0].time",
+                          "status"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "OAuth 2.0; access tokens per user",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-28T22:18:56Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html; charset=utf-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://reference.humanapi.co/reference",
+                                                 "status":  "200",
+                                                 "redirected":  true,
+                                                 "content_type":  "text/html; charset=utf-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  169699,
+                                                 "duration_ms":  544,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.humanapi.co/v1/human/activities?start_date={yyyy-mm-dd}\u0026end_date={yyyy-mm-dd}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=utf-8",
+                                                                "content_length_header":  "107",
+                                                                "raw_bytes":  107,
+                                                                "duration_ms":  28,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.humanapi.co/v1/human/activities?start_date={yyyy-mm-dd}\u0026end_date={yyyy-mm-dd}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.humanapi.co/v1/human/activities?start_date={yyyy-mm-dd}\u0026end_date={yyyy-mm-dd}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.humanapi.co/v1/human/activities?start_date={yyyy-mm-dd}\u0026end_date={yyyy-mm-dd}",
+                                                                 "status":  "401",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=utf-8",
+                                                                 "content_length_header":  "107",
+                                                                 "raw_bytes":  107,
+                                                                 "duration_ms":  200,
+                                                                 "error":  "The remote server returned an error: (401) Unauthorized."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.humanapi.co/v1/human/physiology/heart_rate?start_time={iso}\u0026end_time={iso}",
+                                                                "status":  "404",
+                                                                "redirected":  false,
+                                                                "content_type":  "text/html; charset=utf-8",
+                                                                "content_length_header":  "169",
+                                                                "raw_bytes":  169,
+                                                                "duration_ms":  28,
+                                                                "error":  "The remote server returned an error: (404) Not Found."
+                                                            },
+                                                    "url":  "https://api.humanapi.co/v1/human/physiology/heart_rate?start_time={iso}\u0026end_time={iso}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.humanapi.co/v1/human/physiology/heart_rate?start_time={iso}\u0026end_time={iso}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.humanapi.co/v1/human/physiology/heart_rate?start_time={iso}\u0026end_time={iso}",
+                                                                 "status":  "404",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "text/html; charset=utf-8",
+                                                                 "content_length_header":  "170",
+                                                                 "raw_bytes":  170,
+                                                                 "duration_ms":  42,
+                                                                 "error":  "The remote server returned an error: (404) Not Found."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gpt",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\health_v1\\nonrag\\gpt\\v.json"
+                ],
+    "best_probe_status":  "401",
+    "best_probe_latency_ms":  28,
+    "best_probe_bytes":  true,
+    "solar_scores":  {
+                         "ifs":  0.25,
+                         "support_verified":  false,
+                         "fca":  0.8,
+                         "error_handling_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T22:22:14Z",
+                         "sdas":  0.435,
+                         "pricing_verified":  true,
+                         "constraints_verified":  false,
+                         "code_samples_verified":  false,
+                         "ssi":  0,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true
+                     }
+}
