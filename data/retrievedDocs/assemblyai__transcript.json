@@ -1,0 +1,532 @@
+﻿{
+    "service_id":  "assemblyai__transcript",
+    "name":  "AssemblyAI Core Transcription",
+    "docs_url":  "https://www.assemblyai.com/docs/Models/speech_recognition",
+    "api_base":  "https://api.assemblyai.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/v2/transcript"
+                      },
+                      {
+                          "requires_auth":  true,
+                          "method":  "GET",
+                          "path":  "/v2/transcript/{id}"
+                      }
+                  ],
+    "keys_detected":  [
+                          "id",
+                          "status",
+                          "text",
+                          "confidence"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "API Key (in \u0027authorization\u0027 header)",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-24T23:30:21Z",
+                              "docs_status":  "308",
+                              "docs_type":  "text/plain",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.assemblyai.com/docs/Models/speech_recognition",
+                                                 "status":  "308",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/plain",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  145,
+                                                 "error":  "The remote server returned an error: (308) Permanent Redirect."
+                                             },
+                              "docs_error":  "The remote server returned an error: (308) Permanent Redirect.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "60",
+                                                                "raw_bytes":  60,
+                                                                "duration_ms":  38,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.assemblyai.com/v2/transcript",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.assemblyai.com/v2/transcript",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "15",
+                                                                 "raw_bytes":  15,
+                                                                 "duration_ms":  37,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "60",
+                                                                "raw_bytes":  60,
+                                                                "duration_ms":  38,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "15",
+                                                                 "raw_bytes":  15,
+                                                                 "duration_ms":  31,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:45:30Z",
+                              "docs_status":  "308",
+                              "docs_type":  "text/plain",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.assemblyai.com/docs/Models/speech_recognition",
+                                                 "status":  "308",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/plain",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  128,
+                                                 "error":  "The remote server returned an error: (308) Permanent Redirect."
+                                             },
+                              "docs_error":  "The remote server returned an error: (308) Permanent Redirect.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "60",
+                                                                "raw_bytes":  60,
+                                                                "duration_ms":  36,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.assemblyai.com/v2/transcript",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.assemblyai.com/v2/transcript",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "15",
+                                                                 "raw_bytes":  15,
+                                                                 "duration_ms":  32,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "60",
+                                                                "raw_bytes":  60,
+                                                                "duration_ms":  33,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "15",
+                                                                 "raw_bytes":  15,
+                                                                 "duration_ms":  32,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:56:21Z",
+                              "docs_status":  "308",
+                              "docs_type":  "text/plain",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.assemblyai.com/docs/Models/speech_recognition",
+                                                 "status":  "308",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/plain",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  115,
+                                                 "error":  "The remote server returned an error: (308) Permanent Redirect."
+                                             },
+                              "docs_error":  "The remote server returned an error: (308) Permanent Redirect.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "60",
+                                                                "raw_bytes":  60,
+                                                                "duration_ms":  28,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.assemblyai.com/v2/transcript",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.assemblyai.com/v2/transcript",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "15",
+                                                                 "raw_bytes":  15,
+                                                                 "duration_ms":  34,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "60",
+                                                                "raw_bytes":  60,
+                                                                "duration_ms":  25,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "15",
+                                                                 "raw_bytes":  15,
+                                                                 "duration_ms":  25,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:49:56Z",
+                              "docs_status":  "308",
+                              "docs_type":  "text/plain",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.assemblyai.com/docs/Models/speech_recognition",
+                                                 "status":  "308",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/plain",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  93,
+                                                 "error":  "The remote server returned an error: (308) Permanent Redirect."
+                                             },
+                              "docs_error":  "The remote server returned an error: (308) Permanent Redirect.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "60",
+                                                                "raw_bytes":  60,
+                                                                "duration_ms":  62,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.assemblyai.com/v2/transcript",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.assemblyai.com/v2/transcript",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "15",
+                                                                 "raw_bytes":  15,
+                                                                 "duration_ms":  42,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "60",
+                                                                "raw_bytes":  60,
+                                                                "duration_ms":  54,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "15",
+                                                                 "raw_bytes":  15,
+                                                                 "duration_ms":  31,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:36:14Z",
+                              "docs_status":  "308",
+                              "docs_type":  "text/plain",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://www.assemblyai.com/docs/Models/speech_recognition",
+                                                 "status":  "308",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/plain",
+                                                 "content_length_header":  "",
+                                                 "raw_bytes":  -1,
+                                                 "duration_ms":  144,
+                                                 "error":  "The remote server returned an error: (308) Permanent Redirect."
+                                             },
+                              "docs_error":  "The remote server returned an error: (308) Permanent Redirect.",
+                              "verified_keys_on_page":  null,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "60",
+                                                                "raw_bytes":  60,
+                                                                "duration_ms":  31,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.assemblyai.com/v2/transcript",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.assemblyai.com/v2/transcript",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "15",
+                                                                 "raw_bytes":  15,
+                                                                 "duration_ms":  29,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                },
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                                "status":  "401",
+                                                                "redirected":  false,
+                                                                "content_type":  "application/json; charset=UTF-8",
+                                                                "content_length_header":  "60",
+                                                                "raw_bytes":  60,
+                                                                "duration_ms":  28,
+                                                                "error":  "The remote server returned an error: (401) Unauthorized."
+                                                            },
+                                                    "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.assemblyai.com/v2/transcript/{id}",
+                                                                 "status":  "405",
+                                                                 "redirected":  false,
+                                                                 "content_type":  "application/json; charset=UTF-8",
+                                                                 "content_length_header":  "15",
+                                                                 "raw_bytes":  15,
+                                                                 "duration_ms":  40,
+                                                                 "error":  "The remote server returned an error: (405) Method Not Allowed."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "v.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "gemini",
+                              "source_variant":  "v"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\speechtext_v1\\nonrag\\gemini\\v.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.8,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:37:57Z",
+                         "sdas":  0.435,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  true,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "401",
+    "best_probe_latency_ms":  25,
+    "best_probe_bytes":  true
+}

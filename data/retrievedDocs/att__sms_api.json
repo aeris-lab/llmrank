@@ -1,0 +1,886 @@
+﻿{
+    "service_id":  "att__sms_api",
+    "name":  "AT\u0026T SMS API",
+    "docs_url":  "https://developer.att.com/sms/docs",
+    "api_base":  "https://api.att.com",
+    "endpoints":  [
+                      {
+                          "requires_auth":  true,
+                          "method":  "POST",
+                          "path":  "/3/smsmessaging/outbound/{shortCode}/requests"
+                      }
+                  ],
+    "keys_detected":  [
+                          "outboundSMSRequest",
+                          "address",
+                          "message"
+                      ],
+    "evidence_snippet":  null,
+    "auth_hint":  "OAuth 2.0",
+    "free_tier":  true,
+    "status_checks":  [
+                          {
+                              "checked_utc":  "2025-10-24T17:48:53Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.att.com/sms/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  217274,
+                                                 "duration_ms":  504,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  154,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  61,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:00:34Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.att.com/sms/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  217274,
+                                                 "duration_ms":  1246,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  86,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  6781,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:26:14Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.att.com/sms/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  217274,
+                                                 "duration_ms":  1372,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  49,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  83,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:32:32Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.att.com/sms/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  217274,
+                                                 "duration_ms":  430,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  115,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  61,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T18:39:09Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.att.com/sms/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  217274,
+                                                 "duration_ms":  2209,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  52,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  57,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:15:22Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.att.com/sms/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  217274,
+                                                 "duration_ms":  1546,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  101,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  48,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:27:30Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.att.com/sms/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  217274,
+                                                 "duration_ms":  1293,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  61,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  59,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:33:31Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.att.com/sms/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  217274,
+                                                 "duration_ms":  440,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  56,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  73,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T19:43:56Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.att.com/sms/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  217274,
+                                                 "duration_ms":  1636,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  65,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  65,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-24T23:26:47Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.att.com/sms/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  217274,
+                                                 "duration_ms":  1734,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  77,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  58,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T16:41:58Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.att.com/sms/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  217274,
+                                                 "duration_ms":  1324,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  53,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  52,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T18:52:56Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.att.com/sms/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  217274,
+                                                 "duration_ms":  1426,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  45,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  0,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  43,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-26T21:46:27Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.att.com/sms/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  217274,
+                                                 "duration_ms":  423,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  56,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  124,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          },
+                          {
+                              "checked_utc":  "2025-10-28T23:31:05Z",
+                              "docs_status":  "200",
+                              "docs_type":  "text/html;charset=UTF-8",
+                              "docs_probe":  {
+                                                 "method":  "GET",
+                                                 "url":  "https://developer.att.com/sms/docs",
+                                                 "status":  "200",
+                                                 "redirected":  false,
+                                                 "content_type":  "text/html;charset=UTF-8",
+                                                 "content_length_header":  null,
+                                                 "raw_bytes":  217274,
+                                                 "duration_ms":  1363,
+                                                 "error":  null
+                                             },
+                              "docs_error":  null,
+                              "verified_keys_on_page":  true,
+                              "endpoints":  [
+                                                {
+                                                    "get":  {
+                                                                "method":  "GET",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "500",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  "0",
+                                                                "raw_bytes":  0,
+                                                                "duration_ms":  2565,
+                                                                "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                            },
+                                                    "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                    "opt":  {
+                                                                "method":  "OPTIONS",
+                                                                "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                "status":  "ERR",
+                                                                "redirected":  false,
+                                                                "content_type":  null,
+                                                                "content_length_header":  null,
+                                                                "raw_bytes":  null,
+                                                                "duration_ms":  1,
+                                                                "error":  "A parameter cannot be found that matches parameter name \u0027CustomMethod\u0027."
+                                                            },
+                                                    "head":  {
+                                                                 "method":  "HEAD",
+                                                                 "url":  "https://api.att.com/3/smsmessaging/outbound/{shortCode}/requests",
+                                                                 "status":  "500",
+                                                                 "redirected":  false,
+                                                                 "content_type":  null,
+                                                                 "content_length_header":  "",
+                                                                 "raw_bytes":  -1,
+                                                                 "duration_ms":  138,
+                                                                 "error":  "The remote server returned an error: (500) Internal Server Error."
+                                                             }
+                                                }
+                                            ],
+                              "source_pred":  "t.json",
+                              "source_mode":  "nonrag",
+                              "source_llm":  "mistral",
+                              "source_variant":  "t"
+                          }
+                      ],
+    "sources":  [
+                    "C:\\Users\\uwt\\Desktop\\AAAI\\solar-api-eval\\data\\inputs\\sms_v1\\nonrag\\mistral\\t.json"
+                ],
+    "solar_scores":  {
+                         "error_handling_verified":  false,
+                         "ifs":  0.25,
+                         "fca":  0.16,
+                         "support_verified":  false,
+                         "auth_verified":  true,
+                         "reliability_verified":  false,
+                         "versioning_verified":  false,
+                         "scored_utc":  "2025-10-28T23:32:16Z",
+                         "sdas":  0.147,
+                         "pricing_verified":  true,
+                         "code_samples_verified":  false,
+                         "constraints_verified":  false,
+                         "integration_support_verified":  false,
+                         "required_keys_verified":  false,
+                         "ssi":  0
+                     },
+    "best_probe_status":  "500",
+    "best_probe_latency_ms":  45,
+    "best_probe_bytes":  false
+}
