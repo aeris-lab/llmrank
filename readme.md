@@ -1,0 +1,60 @@
+# Inter-LLM Divergence – Minimal Reproducibility Notebook
+
+This repository provides a lightweight, fully reproducible implementation of the
+core analysis from the paper **“Retrieval Without Consensus: Quantifying Inter-LLM Divergence in API Discovery.”**
+
+## Overview
+The notebook `aaai_study_minimal.ipynb` (or script `aaai_study_minimal.py`) computes four ranking-similarity metrics between large language models (LLMs) across multiple query domains:
+
+| Metric | Description |
+|---------|-------------|
+| **Average Overlap (AO)** | Fraction of shared items averaged across ranks |
+| **Jaccard Similarity** | Intersection / Union of top-K API sets |
+| **Rank-Biased Overlap (RBO)** | Weighted overlap emphasizing early ranks |
+| **Kendall Tau (τ)** | Rank-order correlation of shared APIs |
+
+The goal is to quantify agreement and divergence between LLMs performing the same retrieval or reasoning task.
+
+## Requirements
+```bash
+pip install pandas numpy scipy
+```
+
+## Input Format
+Provide an Excel file `variant_report_c.xlsx` where **each sheet** corresponds to
+a task or query and includes at least these columns:
+
+| LLM Name | Service_Name | Rank |
+|-----------|---------------|------|
+| ChatGPT   | api.weather   | 1    |
+| Claude    | api.weather   | 1    |
+| …         | …             | …    |
+
+## Running
+To execute locally:
+```bash
+python aaai_study_minimal.py
+```
+Or open in Google Colab:
+```python
+!pip install pandas numpy scipy
+!python aaai_study_minimal.py
+```
+
+### Output
+```
+results/pairwise_metrics.csv
+```
+
+Example output:
+| Query | LLM1 | LLM2 | AO | Jaccard | RBO | KendallTau |
+|--------|------|------|----|----------|-----|-------------|
+| Weather | ChatGPT | Claude | 0.57 | 0.42 | 0.36 | 0.62 |
+
+## Citation
+If you use this code, please cite:
+
+> Al-Masri, E., et al. *Retrieval Without Consensus: Quantifying Inter-LLM Divergence in API Discovery.* AAAI 2026 Workshop on LLM-based Multi-Agent Systems (LaMAS 2026).
+
+## License
+MIT License © 2025 Eyhab Al-Masri
