@@ -4,7 +4,7 @@ This repository provides a lightweight, fully reproducible implementation of the
 core analysis from the paper **“Retrieval Without Consensus: Quantifying Inter-LLM Divergence in API Discovery.”**
 
 ## Overview
-The notebook `aaai_study_minimal.ipynb` (or script `aaai_study_minimal.py`) computes four ranking-similarity metrics between large language models (LLMs) across multiple query domains:
+The notebook `aaai_lamas_study.ipynb` computes four ranking-similarity metrics between large language models (LLMs) across multiple query domains:
 
 | Metric | Description |
 |---------|-------------|
@@ -13,7 +13,7 @@ The notebook `aaai_study_minimal.ipynb` (or script `aaai_study_minimal.py`) comp
 | **Rank-Biased Overlap (RBO)** | Weighted overlap emphasizing early ranks |
 | **Kendall Tau (τ)** | Rank-order correlation of shared APIs |
 
-The goal is to quantify agreement and divergence between LLMs performing the same retrieval or reasoning task.
+The goal is to quantify agreement and divergence between LLMs performing the same retrieval or reasoning task. This version is an optimized version of the study. 
 
 ## Requirements
 ```bash
@@ -54,7 +54,7 @@ Example output:
 ## Citation
 If you use this code, please cite:
 
-> Al-Masri, E., et al. *Retrieval Without Consensus: Quantifying Inter-LLM Divergence in API Discovery.* AAAI 2026 Workshop on LLM-based Multi-Agent Systems (LaMAS 2026).
+> Authors, et al. *Retrieval Without Consensus: Quantifying Inter-LLM Divergence in API Discovery.* AAAI 2026 Workshop on LLM-based Multi-Agent Systems (LaMAS 2026).
 
 ## License
-MIT License © 2025 Eyhab Al-Masri
+MIT License © 2025 
