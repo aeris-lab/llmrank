@@ -52,9 +52,7 @@ Example output:
 | Weather | ChatGPT | Claude | 0.57 | 0.42 | 0.36 | 0.62 |
 
 ## Citation
-If you use this code, please cite:
-
-> Authors, et al. *Retrieval Without Consensus: Quantifying Inter-LLM Divergence in API Discovery.* AAAI 2026 Workshop on LLM-based Multi-Agent Systems (LaMAS 2026).
+TBD
 
 ## License
 MIT License © 2025 
